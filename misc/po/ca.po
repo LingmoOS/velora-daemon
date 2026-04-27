@@ -1,0 +1,670 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Jaime Muñoz Martín <jmmartin_5@outlook.com>, 2025
+# deepiner, 2025
+# Davidmp <medipas@gmail.com>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: Davidmp <medipas@gmail.com>, 2026\n"
+"Language-Team: Catalan (https://app.transifex.com/linuxdeepin/teams/3617/ca/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "Si us plau, escriviu una contrasenya d'un mínim de 8 caràcters."
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"La contrasenya ha de contenir lletres angleses (majúscules o minúscules), "
+"números o símbols especials (~!@#$%^&*()[]{}\\|/?,.<>)."
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "El nom d'usuari no es pot deixar en blanc"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "El primer caràcter ha de ser una lletra o un número."
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "El nom d'usuari ja existeix."
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "El nom de grup ja existeix."
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "El nom d'usuari ha de tenir de 3 a 32 caràcters de llargada."
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr "L'usuari %s existia abans i les seves dades estan sincronitzades."
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr ""
+"Aquest fons de pantalla del sistema està blocat. Poseu-vos en contacte amb "
+"l'administrador."
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr "Ha fallat canviar el servidor d'àudio. Torneu-ho a provar més tard."
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr "Es canvia el servidor d'àudio. Espereu, si us plau..."
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr ""
+"El servidor d'àudio ha canviat. Si us plau, sortiu de la sessió i torneu-hi "
+"a entrar."
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr "dde-control-center"
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%s s'ha inhabilitat"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "Obre"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "Port de sèrie"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "Xarxa de marcatge"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "Dispositiu de mans lliures"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "Passarel·la de veu de mans lliures"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "Passarel·la de veu d'auriculars"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr "Premuda d'objecte"
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "Transferència de fitxer"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "Sincronització"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "Accés a l'agenda de telèfons"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "Client d'accés a l'agenda de telèfons"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "Accés a missatges"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "Notificació de missatge"
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr "Es rep %[1]q"
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "Visualització"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "Heu rebut fitxers de %q correctament."
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "Fet"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "Interromp la recepció de fitxers"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "Heu cancel·lat la transferència."
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "Ha fallat la connexió de Bluetooth."
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "Rebutja-ho"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "Rep"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "Transferència de fitxers per Bluetooth"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "%q vol enviar-vos fitxers. Els voleu rebre?"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "S'ha esgotat el temps d'espera per rebre %q."
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "Cliqueu aquí per connectar amb %q"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "Afegeix dispositius Bluetooth"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "Aparella"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr "Maximitza la finestra"
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr "Restaura la finestra"
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr "Divisió de la finestra actual a l'esquerra"
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr "Divisió de la finestra actual a la dreta"
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr "Mostra la vista de multitasca"
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr "Amaga la vista de multitasca"
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr "Canvia a l'escriptori anterior"
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr "Canvia a l'escriptori següent"
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "Mostra l'escriptori"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr "Amaga l'escriptori"
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr "Mostra / amaga el llançador"
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr "Quan es premi el botó dret del ratolí"
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr "Quan es deixi anar el botó dret del ratolí"
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr "Mostra / amaga el porta-retalls"
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr "Mostra / amaga la cerca general"
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr "Mostra / amaga el centre de notificacions"
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr "Inhabilita"
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr "Espai de disc insuficient. Si us plau, feu-ne neteja!"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr "Ves a la neteja"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "Llançador"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "Gravador de pantalla"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "Pantalla de bloqueig"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "Mostra / amaga l'acoblador"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "Atura la interfície."
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "Finestra del terminal Quake"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "Captura de pantalla"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "Captura de pantalla completa"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "Captura de la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "Ajorna la captura"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr "ROC (Imatge a text)"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr "Captura de desplaçament"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "Gestor de fitxers"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "Inhabilita el ratolí tàctil"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "Commuta els efectes de les finestres"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr "Desactiva la pantalla ràpida"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "Monitor del sistema"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "Selector del Deepin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "De text a discurs"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "De discurs a text"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "Porta-retalls"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "Traducció"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "Cerca gran"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "Centre de notificacions"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "Commuta la disposició"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr "Commuta les pantalles múltiples"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "Ves a l'espai de treball de l'esquerra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "Ves a l'espai de treball de la dreta"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "Ves a l'espai de treball de dalt"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "Ves a l'espai de treball de baix"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "Commuta finestres semblants"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "Commuta finestres semblants a la inversa"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "Commuta finestres"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "Commuta finestres a la inversa"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr "Activa el menú de la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "Maximitza la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "Restaura la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "Minimitza la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "Tanca la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "Mou la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "Canvia la mida de la finestra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "Mou a l'espai de treball de l'esquerra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "Mou a l'espai de treball de la dreta"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "Mou a l'espai de treball de dalt"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "Mou a l'espai de treball de baix"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "Mostra les finestres de tots els espais de treball"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "Mostra les finestres de l'espai de treball actual"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "Mostra l'espai de treball"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "Apropa"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "Allunya"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr "Mida real"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr "Mosaic ràpid de finestres a l'esquerra"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr "Mosaic ràpid de finestres a la dreta"
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "Cal autenticació per canviar la llengua."
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+"Es canvia la llengua del sistema i s'instal·len els paquets de llengua "
+"necessaris. Espereu, si us plau..."
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "Es canvia la llengua del sistema. Espereu, si us plau..."
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr ""
+"S'ha canviat la llengua del sistema. Si us plau, sortiu de la sessió i "
+"torneu-hi a entrar."
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr ""
+"Ha fallat canviar la llengua del sistema. Si us plau, torneu-ho a provar més"
+" tard."
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid "\"%s\" did not pass the system security verification, and cannot run now"
+msgstr ""
+"\"%s\" no ha superat el sistema de verificació de seguretat i no es pot "
+"executar ara."
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+"No podeu executar %s sense verificar, però podeu canviar-ne la configuració "
+"al Centre de seguretat."
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr "Precedeix-hi"
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr "El sistema s'aturarà automàticament d'aquí a %d s."
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr "Aturada programada"
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr "Cancel·la"
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "Atura't"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "Bateria molt baixa"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "Bateria baixa, endolleu-lo, si us plau."
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr "l'ordinador s'aturarà."
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr "l'ordinador es posarà en suspens."
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr "l'ordinador hibernarà."
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr "el monitor s'aturarà."
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr "el monitor mostrarà la interfície d'aturada"
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr "no significarà res per a l'ordinador."
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr "Connexió amb %q correcta"
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%q desconnectada"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "Assegureu-vos que %q estigui activada i a l'abast."
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+"%q ja no es pot connectar amb %q. Proveu de fer oblidar aquest dispositiu i "
+"torneu-lo a aparellar."
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "Espai"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "Cal autenticació per establir l'hora del sistema."
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr ""
+"Cal autenticació per controlar si s'ha d'habilitar la sincronització amb "
+"l'hora de la xarxa."
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "Cal autenticació per canviar el servidor NTP."
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr ""
+"Cal autenticació per controlar si l'RTC (rellotge de temps real) desa l'hora"
+" local o l'hora UTC."
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "Cal autenticació per establir la zona horària del sistema."

@@ -1,0 +1,667 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Keine Werbung, 2025
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: Keine Werbung, 2025\n"
+"Language-Team: German (Germany) (https://app.transifex.com/linuxdeepin/"
+"teams/3617/de_DE/)\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "Bitte geben Sie ein Passwort mit mindestens 8 Zeichen ein"
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"Das Passwort muss aus lateinischen Buchstaben (Groß-/Kleinschreibung "
+"beachten), Ziffern oder Spezialzeichen  (~!@#$%^&*()[]{}\\|/?,.<>) bestehen"
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "Benutzername darf nicht leer sein"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "Das erste Zeichen muss ein Buchstabe oder eine Ziffer sein"
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "Dieser Benutzername ist schon vergeben"
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "Der Gruppenname ist schon vergeben"
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "Der Benutzername muss 3 bis 32 Zeichen lang sein"
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr ""
+"Benutzer \"%s\" gab es schon vorher und seine Daten sind synchronisiert"
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr ""
+"Dieses System-Hintergrundbild ist gesperrt. Bitte kontaktieren Sie ihren "
+"Administrator."
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr ""
+"Der Audio Server konnte nicht geändert werden. Bitte später erneut versuchen."
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr "Audio Server wird geändert, bitte warten"
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr "Audio Server wurde geändert, bitte aus- und wieder einloggen."
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr "dde-control-center"
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%s wurden abgeschaltet"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "Offen"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "Serieller Anschluss"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "Einwahl-Netzwerken"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "Freisprecheinrichtung"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "Freisprechanlagen-Zugang"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "Headsetanlagen-Zugang"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr "Objekt-Push"
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "Datentransfer"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "Synchronisation"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "Telefonbuchzugang"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "Telefonbuch-Zugangsprogramm"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "Nachrichtenzugang"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "Mitteilungsbenachrichtigung"
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr ""
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "Ansicht"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "Sie haben erfolgreich Dateien von %q erhalten "
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "Erledigt"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "Dateienempfang stoppen"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "Sie haben die Dateienübertragung gestoppt"
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "Bluetooth-Verbindung fehlgeschlagen"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "Zurücknehmen"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "Erhalten"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth-Dateienübertragung"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "%q möchte Ihnen Dateien zusenden. Annehmen?"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "Annahme abgelaufen"
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "Hier klicken für eine Verbindung mit %q"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "Bluetooth-Geräte hinzufügen"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "Miteinander Verbinden"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "Zeige den Schreibtisch"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr ""
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr "Ungenügender Speicherplatz, bitte gleich freimachen!"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr "zum Bereinigen wechseln"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "Starter"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "Bildschirmrekorder"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "Sperrbildschirm"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "Dock anzeigen/verbergen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "Ausschalt-Abfrage"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "Terminal PopUp-Fenster"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "Bildschirmfoto"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "Gesamtbildschirmfoto"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "Fensterfoto"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "Verzögerte Fotoaufnahme"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr "OCR (Bild zu Text)"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr "Scrollbildschirmaufnahme"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "Dateiverwaltung"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "Touchpad abschalten"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "Fenstereffekte wechseln"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr "Bildschirmschnellabschaltung"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "System-Überwachung"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "Deepin-Auswähler"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "Text zu Sprache"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "Sprache zu Text"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "Klemmbrett"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "Übersetzung"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "Große Suche"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "Nachrichtenzentrale"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "Wechsle Layout"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr "Mehrere Bildschirme hin-und herschalten"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "Wechsle zum linken Arbeitsbereich"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "Wechsle zum rechten Arbeitsbereich"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "Wechsle zum oberen Arbeitsbereich"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "Wechsle zum unteren Arbeitsbereich"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "Wechsle ähnliche Fenster"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "Wechsle ähnliche Fenster rückwärts"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "Wechsle Fenster"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "Wechsle Fenster rückwärts"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "Maximiere Fenster"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "Fenster wiederherstellen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "Minimiere Fenster"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "Fenster schließen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "Fenster bewegen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "Fenstergröße ändern"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "Zum linken Arbeitsbereich gehen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "Zum rechten Arbeitsbereich gehen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "Zum oberen Arbeitsbereich gehen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "Zum unteren Arbeitsbereich gehen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "Zeige Fenster aller Arbeitsbereiche"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "Zeige Fenster des aktuellen Arbeitsbereichs"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "Zeige Arbeitsbereich"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "Hineinzoomen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "Herauszoomen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr "auf tatsächliche Größe zoomen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr "Fenster Schnelleinteilung links"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr "Fenster Schnelleinteilung rechts"
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "Sprache wechseln erfordert eine Authentifizierung"
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+"Systemsprache wird gewechselt und die nötigen Sprachpakete werden geladen, "
+"bitte warten…"
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "Systemsprache wird gewechselt, einen Moment bitte…"
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr "Systemsprache wurde gewechselt, bitte ab- und wieder anmelden"
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr ""
+"Wechsel der Systemsprache ist fehlgeschlagen, bitte später nochmals versuchen"
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid ""
+"\"%s\" did not pass the system security verification, and cannot run now"
+msgstr ""
+"\"%s\" erfüllte nicht die Systemsicherheits-Verifizierung und kann daher "
+"nicht starten"
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+"Sie können nicht das unverifizierte \"%s\", starten, aber SIe können die "
+"Einstellungen im Sicherheitszentrum ändern."
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr "Weitermachen"
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr "Das System wird automatisch in %d s herunterfahren"
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr "Herunterfahren gemäß Zeitplan"
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr "Abbrechen"
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "Herunterfahren"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "Akkustand kritisch niedrig"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "Akkustand niedrig, bitte ans Netz anschließen"
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr "Ihr Computer wird herunterfahren"
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr "Ihr Computer geht in Ruhezustand"
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr "Ihr Computer geht in Ruhezustand"
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr "Der Monitor wird abgeschalten"
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr "Der Monitor wird den Herunterfahren-Bildschirm zeigen"
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr "das wird nichts mit ihrem Computer machen"
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr "Verbinde %q erfolgreich"
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%q getrennt"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "Stelle sicher, dass %q angeschalten und in Reichweite ist"
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+"%q kann nicht länger mit %q verbinden. Versuchen Sie dieses Gerät zu "
+"entfernen und erneut eine Verbindung damit aufzubauen"
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "Leertaste"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "Authentifizierung ist erforderlich für das Einstellen der Systemzeit"
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr ""
+"Authentifizierung ist erforderlich beim Einstellen, ob die Systemzeit-"
+"Synchronisierung eingeschalten werden soll "
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "Sie müssen sich authentifizieren, um NTP-Server zu ändern"
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr ""
+"Authentifizierung ist erforderlich beim Einstellen, ob RTC die örtliche oder "
+"die UTC-Zeit speichern soll"
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "Authentifizierung ist erforderlich für das Einstellen der Zeitzone"

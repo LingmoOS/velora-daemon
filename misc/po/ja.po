@@ -1,0 +1,655 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Katabame Miaya <katabamia@gmail.com>, 2025
+# Maggie Liu <maggie.liufei@gmail.com>, 2025
+# Ryo Nakano, 2025
+# 李洪武 <lihongwu1987@gmail.com>, 2025
+# luozengbin <jalen.cn@gmail.com>, 2025
+# 🎈 BALLOON | FU-SEN, 2025
+# MMP 0 <mmmmpp0@yahoo.co.jp>, 2025
+# deepiner, 2025
+# Keita Kunishi (Keitan924111), 2025
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: Keita Kunishi (Keitan924111), 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/linuxdeepin/teams/3617/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "8 文字以上でパスワードを入力してください"
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"パスワードには英字 (大文字と小文字を区別します)、数字、特殊記号 (~!@#$%^&*()[]{}\\|/?,.<>) 以外の文字を使用できません"
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "ユーザー名は空欄にできません"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "最初の文字は英数字にする必要があります"
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "このユーザー名はすでに存在します"
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "このグループ名はすでに存在します"
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "ユーザー名は3文字以上32文字以下にする必要があります"
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr ""
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr "壁紙は固定されています。詳細はシステム管理者にお問い合わせください。"
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr "オーディオサーバーを変更できませんでした。もう一度お試しください"
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr "オーディオサーバーを変更しています。しばらくお待ちください..."
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr "オーディオサーバーが変更されました。再度ログインしてください。"
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr "dde-control-center"
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%sが無効化されました"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "開く"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "シリアルポート"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "ダイヤルアップ ネットワーク"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "ハンズフリーデバイス"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "ハンドフリー音声ゲートウェイ"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "ヘッドセット音声ゲートウェイ"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr "オブジェクトプッシュ"
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "ファイル転送"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "同期"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "電話帳アクセス"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "電話帳アクセスクライアント"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "メッセージアクセス"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "メッセージ通知 "
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr ""
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "表示"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "%qからファイルを受信しました"
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "完了"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "停止"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "ファイル転送を停止しました"
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "Bluetooth接続に失敗しました"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "拒否"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "受信"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "Bluetoothファイル共有"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "%qがファイルを送信しようとしています。受信しますか?"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "%qの受信がタイムアウトしました"
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "ここをクリックして%qに接続"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "Bluetoothデバイスを追加"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "ペアリング"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr "ウィンドウを最大化"
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr "ウィンドウを復元"
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "デスクトップを表示"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr ""
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr "ディスクの空き領域が不足しています。すぐにクリーンアップしてください！"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "ランチャー"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "ターミナル"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "画面収録"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "画面をロック"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "ドックの表示/非表示"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "シャットダウンインターフェース"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "ターミナルQuakeウィンドウ"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "スクリーンショット"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "画面全体のスクリーンショット"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "ウィンドウのスクリーンショット"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "タイマー スクリーンショット"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "ファイル マネージャー"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "タッチパッドを無効にする"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "ウィンドウ エフェクトを切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr "高速画面オフ"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "システム モニター"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "Deepinピッカー"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "音声合成"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "音声入力"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "クリップボード"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "翻訳"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "Grand Search"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "通知センター"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "レイアウトを切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "左のワークスペースに切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "右のワークスペースに切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "上のワークスペースに切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "下のワークスペースに切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "類似ウィンドウを切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "類似ウィンドウを逆に切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "ウィンドウを切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "ウィンドウを逆に切り替え"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "ウィンドウを最大化"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "ウィンドウを復元"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "ウィンドウを最小化"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "ウィンドウを閉じる"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "ウィンドウを移動"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "ウィンドウのサイズを変更"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "左のワークスペースに移動"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "右のワークスペースに移動"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "上のワークスペースに移動"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "下のワークスペースに移動"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "すべてのワークスペースのウィンドウを表示"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "現在のワークスペースのウィンドウを表示"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "ワークスペースを表示"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "拡大"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "縮小"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr ""
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "言語を変更するには認証が必要です"
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "システム言語を変更しています。しばらくお待ちください..."
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr "システム言語が変更されました。再度ログインしてください。"
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr "システム言語を変更できませんでした。もう一度お試しください"
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid "\"%s\" did not pass the system security verification, and cannot run now"
+msgstr ""
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr ""
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr ""
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr ""
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr ""
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "シャットダウン"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "バッテリー残量がごくわずかです"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "バッテリーが少なくなっています。電源に接続してください"
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr ""
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr ""
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr ""
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr ""
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr ""
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr ""
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr ""
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%q から切断されました"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "%q がオンになっていて、範囲内にあることをご確認ください"
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "スペース"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "システム時刻を変更するには認証が必要です"
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr ""
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "NTPサーバーを変更するには認証が必要です"
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr ""
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "システムタイムゾーンを変更するには認証が必要です"

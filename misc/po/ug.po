@@ -1,0 +1,662 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Muhammadali Abliz <ordam2@163.com>, 2025
+# deepiner, 2025
+# Ug HushBeg <HushBeg@163.com>, 2025
+# مۇختەر مەخمۇت <yeganaaa@163.com>, 2025
+# 阿迪力 买买提明 <251078110@qq.com>, 2025
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: 阿迪力 买买提明 <251078110@qq.com>, 2025\n"
+"Language-Team: Uyghur (https://app.transifex.com/linuxdeepin/teams/3617/ug/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ug\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "پارول 8 خانىگە يەتمىسە يېڭى بىر پارول كىرگۈزۈڭ"
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"پارول چوقۇم ئىنگلىزچە ھەرىپ-بەلگە(چوڭ كىچىك يېزىشنى ئايرىيدۇ) رەقەم ياكى "
+"بوشلۇق ئالاھىدە ھەرپ بەلگىلەر(~!@#$%^&*()[]{}\\|/?,.<>) نى ئۆز ئىچىگە ئېلىشى"
+" كېرەك"
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "ئىشلەتكۈچى ئىسمى قۇرۇق قالسا بولمايدۇ"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "بىرىنچى ھەرپ چوقۇم بىر ھەرپ ياكى سان بولۇشى كېرەك"
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "بۇ ئابۇنت ئىسىمى مەۋجۇت"
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "بۇ ئىسىم ئىشلەتكۈچى گۇرۇپپىسى نامى بىلەن ئوخشاش بولۇپ قالدى"
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "ئىشلەتكۈچى ئىسمى 3 دىن 32 ھەرپ ئارىلىقىدا بولۇشى كېرەك"
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr ""
+"ئىشلەتكۈچى %sئاللىبۇرۇن مەۋجۇت، بۇرۇنقى سانلىق مەلۇماتلار ماس قەدەملەندى"
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr "نۆۋەتتىكى تەگلىك قۇلۇپلانغان، باشقۇرغۇچى بىلەن ئالاقىلىشىڭ"
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr ""
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr ""
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr ""
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr ""
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%s چەكلەنگەن"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "ئېچىش"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "ئارقىمۇ-ئارقا ئۇلىنىش ئېغىزى"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "نومۇر بۇراپ ئۇلىنىدىغان تور"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "ياڭراتقۇ ئۈسكۈنىسى"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "مىكروفونلۇق ياڭراتقۇ ئۈسكۈنىسى"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "تېلېفون سۆزلىشىش ئۈسكۈنىسى"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr "ھۆججەت چىقىرىش"
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "ھۆججەت ئەۋەتىش"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "ماسقەدەم"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "تېلېفون خاتىرىسىنى زىيارەت قىلىش"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "تېلېفون خاتىرىسىنى زىيارەت قىلىش تېرمىنالى"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "ئۇچۇرلارنى زىيارەت قىلىش"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "ئۇچۇر ئۇقتۇرۇشى"
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "بىكار قىلىش"
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr ""
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "كۆرۈش"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "%q دىن كەلگەن ھۆججەتنى قوبۇللاش تاماملاندى"
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "تامام"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "ھۆججەت قوبۇللاش ئۈزۈلۈپ قالدى"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "ھۆججەت قوبۇللاشنى بىكار قىلدىڭىز"
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "كۆكچىش ئۇلىنىشى مەغلۇپ بولدى"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "رەت قىلىش"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "قوبۇللاش"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "كۆكچىشتە ھۆججەت يوللاش"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "%q ھۆججەت يوللىدى، قوبۇللامسىز؟"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "%q دىن قوبۇللاش ۋاقتى ئۆتتى"
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "چېكىپ %q نى قوشۇڭ"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "كۆك چىش ئۈسكۈنىسىنى قوشۇڭ"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "جۈپلەش"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "ئۈستەليۈزىنى كۆرسىتىش"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr ""
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr "دىسكا بوشلۇقى يېتەرسىز، دىسكىڭىزنى تازىلاڭ!"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "ئۈستەليۈزى قوزغاتقۇچ"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "تېرمىنال"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "ئېكراننى سىنغا ئېلىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "قۇلۇپ ئېكرانى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "ۋەزىپە بالدىقىنى كۆرسىتىش / يوشۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "كۆرۈنمە يۈزنى تاقاش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "تېرمىنال كۆزنىكى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "ئېكران رەسىم كېسىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "پۈتۈن ئېكران رەسىم كېسىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "كۆزنەك رەسىمگە تۇتۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "كىچىكتۈرۈپ  ئېكران رەسىم كېسىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr "سۈرەت-يېزىق پەرق ئېتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr "دومىلىما كەسمە رەسىم "
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "ھۆججەت باشقۇرغۇچ"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "سېزىمچان تاختىنى توختىتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "كۆزنەك ئالمىشىش ئۈنۈمى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr "تىزلا ئېكراننى ئۆچۈرۈش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "سىستېما نازارەتچىسى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "Deepin رەڭ ئالغۇ"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "ئاۋازلىق ئوقۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "ئاۋازلىق ئاڭلاپ يېزىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "چاپلاش تاختىسى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "تېكىست تەرجىمىسى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "تولۇق ئىزدەش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "ئۇقتۇرۇش مەركىزى"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "ئورۇنلاشتۇرۇشنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr "كۆپ ئېكرانلىق ھالەتكە ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "سول تەرەپتىكى خىزمەت رايونىنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "ئوڭ تەرەپتىكى خىزمەت رايونىنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "ئۈستى تەرەپتىكى خىزمەت رايونىنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "ئاستى تەرەپتىكى خىزمەت رايونىنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "ئوخشاش كۆزنەكلەرنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "ئوخشاش كۆزنەكلەرنى تەتۈرسىگە ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "كۆزنەكلەرنى ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "كۆزنەكلەرنى تەتۈرسىگە ئالماشتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "كۆزنەكنى چوڭايتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "كۆزنەكنى ئەسلى چوڭلۇقىغا قايتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "كۆزنەكنى كىچىكلىتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "كۆزنەكنى تاقاش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "كۆزنەكنى يۆتكەش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "كۆزنەكنىڭ چوڭلۇقىنى ئۆزگەرتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "سول خىزمەت رايونىغا يۆتكەش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "ئوڭ خىزمەت رايونىغا يۆتكەش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "ئۈستى خىزمەت رايونىغا يۆتكەش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "ئاستى خىزمەت رايونىغا يۆتكەش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "خىزمەت رايوندىكى ھەممە كۆزنەكنى كۆرسىتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "كۆزنەكنى نۆۋەتتىكى خىزمەت رايونلىرىدا كۆرسىتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "خىزمەت رايونىنى كۆرسىتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "ئېكراننى چوڭايتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "ئېكراننى كىچىكلىتىش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr "ئېكران چوڭلۇقىنى ئەسلىگە قايتۇرۇش"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr ""
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "سىستېما تىلىنى ئۆزگەرتىش ئۈچۈن سالاھىيەت دەلىللەش كېرەك"
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+"سىستېما تىلىنى ئالماشتۇرۇۋاتىدۇ ۋە يوقاپ كەتكەن تىل بولىقىنى ئورنىتىۋاتىدۇ، "
+"ساقلاپ تۇرۇڭ ..."
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "سىستېما تىلىنى ئالماشتۇرۇۋاتىدۇ, سەل ساقلاپ تۇرۇڭ..."
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr "سىستېما تىلى ئۆزگەرتىلدى، چېكىنىپ قايتا كىرىڭ"
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr "سىستېما تىلىنى ئۆزگەرتىش مەغلۇپ بولدى، قايتا سىناپ بېقىڭ."
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid "\"%s\" did not pass the system security verification, and cannot run now"
+msgstr "«%s»سىستېما بىخەتەرلىك تەكشۈرۈشىدىن ئۆتەلمىدى، ئىجرا قىلغىلى بولمايدۇ"
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+"«%s» سىستېما بىخەتەرلىك تەكشۈرۈشىدىن ئۆتەلمىدى، ئىجرا قىلغىلى بولمايدۇ، "
+"بىخەتەرلىك مەركىزى- بىخەتەرلىك قورالى-ئەپ بىخەتەرلىكىگە كىرىپ تەڭشەڭ"
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr "كىرىش"
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr "سىستېما %dدىن كېيىن ئاپتوماتىك تاقىلىدۇ"
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr "ۋاقىت بەلگىلەپ تاقاش"
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr "بىكار قىلىش"
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "تاقاش"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "باتارېيەدە توك تۈگىدى"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "باتارېيەدە توك ئاز قالدى، توكقا چېتىڭ"
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr "تاقاشقا ئۆزگەرتىش"
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr "كۈتۈش ھالىتىگە ئۆزگەرتىش"
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr "ئۇيقۇ ھالىتىگە ئۆزگەرتىش"
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr "ئېكراننى تاقاشقا ئۆزگەرتىش"
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr "تاقاش كۆرۈنمە يۈزىگە ئۆزگەرتىش"
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr "ھېچقانداق مەشغۇلات قىلماسلىققا ئۆزگەرتىش"
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr "%qغا ئۇلاندى"
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%qدىن ئۈزۈلدى"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "%q ئىچىلىپ بولغانلىقىنى جەزملەشتۈرۈڭ"
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+"%q بىلەن %q قايتا ئۇلىنالمىدى، نەزەردىن ساقىت قىلغاندىن كېيىن قايتا ئۇلاپ "
+"سىناڭ."
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "بوشلۇق"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "سىستېما ۋاقتىنى بەلگىلەش ئۈچۈن دەلىللەش تەلەپ قىلىنىدۇ"
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr "تور ۋاقتىنى ماسقەدەملەشنى قوزغىتىش ياكى تاقاش دەلىللەشنى تەلەپ قىلىدۇ"
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "ۋاقىت مۇلازىمېتىرىنى ئۆزگەرتىش دەلىللەشنى تەلەپ قىلىدۇ"
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr ""
+"قاتتىق دېتال سائىتىنى يەرلىك ۋاقىت ياكى UTC ئىشلىتىش ئۈچۈن دەلىللەش تەلەپ "
+"قىلىنىدۇ"
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "سىستېما ۋاقىت رايونىنى بەلگىلەش ئۈچۈن دەلىللەش تەلەپ قىلىنىدۇ"

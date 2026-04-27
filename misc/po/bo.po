@@ -1,0 +1,663 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Thupten 123 <2389588952@qq.com>, 2025
+# tsewang baljor <bdcwbj@163.com>, 2025
+# yeshe lhamo <981611630@qq.com>, 2025
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: yeshe lhamo <981611630@qq.com>, 2025\n"
+"Language-Team: Tibetan (https://app.transifex.com/linuxdeepin/teams/3617/bo/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bo\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "གྲངས་གནས་8ལས་མི་ཉུང་བའི་གསང་ཨང་ནང་འཇུག་བྱེད་རོགས།"
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"གསང་ཨང་ནང་དབྱིན་ཡིག་（ཡིག་ཆེན་ཡིག་ཆུང་གི་དབྱེ་བ་ཡོད་པ་）དང་། "
+"ཨང་ཀི་ཡང་ན་དམིགས་བསལ་མཚོན་རྟགས་（~!@#$%^&*()[]{}\\|/?,.<>）ཡོད་དགོས།"
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "སྤྱོད་མཁན་མིང་སྟོང་པ་ཡིན་མི་རུང་།"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "ཡིག་འབྲུ་ཐོག་མ་དེ་ངེས་པར་དུ་གསལ་བྱེད་དམ་ཨང་ཀི་ཡིན་དགོས། "
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "སྤྱོད་མཁན་མིང་འདི་འདུག"
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "མིང་འདི་དང་སྤྱོད་མཚན་ཚོ་ཆུང་གི་མིང་བསྐྱར་ཟློས་བྱས་འདུག"
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "སྤྱོད་མཁན་མིང་གི་རིང་ཚད་ངེས་པར་དུ་ཡིག་འབྲུ་3ནས་32བར་ཡིན་དགོས། "
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr ""
+"སྤྱོད་མཁན་“%s”ནི་དེ་སྔའི་སྤྱོད་མཁན་ཞིག་ཡིན་པས། "
+"ཐོག་མའི་གཞི་གྲངས་མཉམ་བགྲོད་བྱས་ཟིན།"
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr ""
+"མིག་སྔའི་རྒྱུད་ཁོངས་ཀྱི་རྩིག་ཤོག་སྒོ་ལྕགས་བརྒྱབ་འདུག་པས། "
+"དོ་དམ་པ་དང་འབྲེལ་བ་བྱོས།"
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr ""
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr ""
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr ""
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr ""
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%sབཀག་ཟིན།"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "ཁ་ཕྱེ་བ།"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "ཕྲེང་བགྲོད་མཐུད་སྣེ།"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "ཨང་གནོན་དྲ་རྒྱ།"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "རྒྱང་ཉན་སྒྲིག་ཆས།"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "རྒྱང་ཉན་དྲ་སྒོ།"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "ཉན་ཆས་དྲ་སྒོ།"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr "དམིགས་ཡུལ་བརྗེ་བ།"
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "ཡིག་ཆ་སྐྱེལ་གཏོང་།"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "མཉམ་བགྲོད།"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "ཁ་པར་ཨང་དེབ་ལྟ་སྤྱོད།"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "ཁ་པར་ཨང་དེབ་ལྟ་སྤྱོད་ཀྱི་མཁོ་མཁན་ཕྱོགས།"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "བརྡ་འཕྲིན་ལྟ་སྤྱོད།"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "བརྡ་འཕྲིན་བརྡ་ཐོ།"
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "འདོར་བ། "
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr ""
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "ལྟ་བཤེར།"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "ཁྱེད་ཀྱིས་%qཡི་ཡིག་ཆ་བླངས་ཟིན།"
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "ལེགས་གྲུབ།"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "ཡིག་ཆ་ལེན་མཚམས་བཞག་པ།"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "ཁྱེད་ཀྱིས་ཡིག་ཆ་ལེན་རྒྱུ་རྩིས་མེད་དུ་བཏང་བ།"
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "སོ་སྔོན་འབྲེལ་མཐུད་ཆད་པ།"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "མི་ལེན་པ།"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "ལེན་པ།"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "སོ་སྔོན་ཡིག་ཆ་སྐྱེལ་གཏོང་།"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "ཁྱེད་ལ་%qཀྱིས་བསྐུར་བའི་ཡིག་ཆ་འབྱོར་འདུག་པས། རྩིས་ལེན་བྱེད་དམ།"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "%qལེན་པ་དུས་ཚོད་ལས་བརྒལ་བ།"
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "མནན་ནས་སྒྲིག་འགོད་བྱས་ཏེ་%qསྣོན་པ།"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "སོ་སྔོན་སྒྲིག་ཆས་སྣོན་པ།"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "ཆ་སྒྲིག་པ།"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "མངོན་སྟོན་ཅོག་ངོས།"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr ""
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr ""
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr "རྒྱུད་ཁོངས་ཀྱི་ཤོང་ཚད་མི་འདང་བས་དུས་ཐོག་ཏུ་གཙང་སེལ་བྱེད་རོགས།"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "འགོ་སློང་ཆས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "མཐའ་སྣེ། "
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "བརྙན་ཡོལ་བརྙན་འཇུག"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "མཐུད་ངོས་སྒོ་ལྕགས་བརྒྱབ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "ལས་འགན་ཚན་བྱང་མངོན་སྟོན།/ཡིབ་པ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "སྒོ་བརྒྱབ་མཐུད་ངོས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "མཐའ་སྣེ་ཐོག་ལྷའི་དཔེ་རྣམ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "བཅད་ལེན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "བརྙན་ཡོལ་ཆ་ཚང་བཅད་ལེན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "སྒེའུ་ཁུང་བཅད་ལེན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "དུས་འགྱངས་བཅད་ལེན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr "པར་རིས་ངོས་འཛིན།(Image to Text)"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr "དྲས་རིས་འགྲིལ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "ཡིག་ཆ་དོ་དམ་བྱེད་ཆས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "ཐུག་རེག་བརྙན་ཡོལ་སྤྱོད་མི་ཆོག"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "སྒེའུ་ཁུང་གི་དམིགས་བསལ་ནུས་པ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr "མྱུར་མགྱོགས་ཡོལ་ནག"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "རྒྱུད་ཁོངས་ལྟ་ཆས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "གཏིང་མདོག་ལེན་ཆས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "ཀློག་པ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "དཔོད་བྲིས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "དྲས་སྦྱར་པང་།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "ཡིག་ཆ་ཡིག་སྒྱུར།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "ཁྱོན་ཡོངས་ནས་འཚོལ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "བརྡ་ཐོའི་ལྟེ་གནས།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "མཐེབ་གཞོང་བཀོད་པ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr "བརྙན་མང་སྒྲིག་འགོད་དུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "གཡོན་ཕྱོགས་ཀྱི་ལས་ཀ་བྱེད་ཁུལ་དུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "གཡས་ཕྱོགས་ཀྱི་ལས་ཀ་བྱེད་ཁུལ་དུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "གོང་གི་ལས་ཀ་བྱེད་ཁུལ་དུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "འོག་གི་ལས་ཀ་བྱེད་ཁུལ་དུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "རིགས་གཅིག་འདྲའི་སྒེའུ་ཁུང་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "རིགས་གཅིག་འདྲའི་སྒེའུ་ཁུང་ལྡོག་ཕྱོགས་སུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "སྒེའུ་ཁུང་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "སྒེའུ་ཁུང་ལྡོག་ཕྱོགས་སུ་བརྗེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "སྒེའུ་ཁུང་ཆེ་ཤོས་སུ་ཕྱེ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "སྒེའུ་ཁུང་སོར་ཆུད་པ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "སྒེའུ་ཁུང་ཆུང་ཤོས་སུ་འགྱུར་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "སྒེའུ་ཁུང་བརྒྱབ་པ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "སྒེའུ་ཁུང་སྤོ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "སྒེའུ་ཁུང་གི་ཆེ་ཆུང་སྒྱུར་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "གཡོན་ཕྱོགས་ཀྱི་ལས་ཀ་བྱེད་ཁུལ་དུ་སྤོ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "གཡས་ཕྱོགས་ཀྱི་ལས་ཀ་བྱེད་ཁུལ་དུ་སྤོ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "གོང་གི་ལས་ཀ་བྱེད་ཁུལ་དུ་སྤོ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "འོག་གི་ལས་ཀ་བྱེད་ཁུལ་དུ་སྤོ་བ།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "ལས་ཀ་བྱེད་ཁུལ་གྱི་སྒེའུ་ཁུང་ཆ་ཚང་མངོན་སྟོན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "མིག་སྔའི་ལས་ཀ་བྱེད་ཁུལ་གྱི་སྒེའུ་ཁུང་མངོན་སྟོན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "ལས་ཀ་བྱེད་ཁུལ་མངོན་སྟོན།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "བརྙན་ཡོལ་ཆེར་གཏོང་།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "བརྙན་ཡོལ་ཆུང་གཏོང་།"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr "བརྙན་ཡོལ་སྐྱེད་སྐྱུང་བསྐྱར་སྒྲིག"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr ""
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "སྐད་ཡིག་བརྗེ་སྐབས་བདེན་དཔང་བྱ་དགོས།"
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+"རྒྱུད་ཁོངས་ཀྱི་སྐད་ཡིག་ལ་བརྗེ་བཞིན་པ་མ་ཟད་སྐད་ཡིག་མེད་པ་དག་ཀྱང་སྒྲིག་སྦྱོར་བྱེད་བཞིན་ཡོད་པས་ཏོག་ཙམ་སྒུག་རོགས།"
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "རྒྱུད་ཁོངས་ཀྱི་སྐད་ཡིག་ལ་བརྗེ་བཞིན་ཡོད་པས་ཏོག་ཙམ་སྒུག་རོགས།"
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr "སྐད་ཡིག་བརྗེས་ཟིན་པས་ཐོ་བསུབས་རྗེས་ཡང་བསྐྱར་ནང་འཇུག་བྱེད་རོགས།"
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr ""
+"རྒྱུད་ཁོངས་སྐད་ཡིག་བརྗེ་མི་ཐུབ་པས་ཏོག་ཙམ་ནས་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།"
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid "\"%s\" did not pass the system security verification, and cannot run now"
+msgstr ""
+"“%s”རྒྱུད་ཁོངས་བརྒྱུད་དེ་བདེ་འཇགས་ར་སྤྲོད་བྱས་མེད་པས། "
+"འཁོར་སྐྱོད་བྱེད་ཐབས་བྲལ།"
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+"\"%s\"མ་ལག་བདེ་འཇགས་ཀྱི་ར་སྤྲོད་ཐུབ་མེད་པས། བཀོལ་སྤྱོད་བྱེད་ཐབས་མེད། "
+"བདེ་འཇགས་ལྟེ་གནས།-བདེ་འཇགས་ཡོ་བྱད།-ཉེར་སྤྱོད་བདེ་འཇགས་སུ་བསྐྱོད་ནས་ལེགས་སྒྲིག་གནང་རྒྱུ།"
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr "བསྐྱོད་པ།"
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr "རྒྱུད་ཁོངས་%dརྗེས་རང་འགུལ་གྱིས་སྒོ་རྒྱག་སྲིད།"
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr "དུས་བཀག་ལྟར་ཁ་རྒྱག་པ།"
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr "འདོར་བ།"
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "ལམ་སེང་ཁ་བརྒྱབ།"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "གློག་རྫོགས་ཟིན།"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "གློག་ཉུང་བས་གློག་ཁུངས་དང་མཐུད་རོགས།"
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr "སྒོ་བརྒྱབ་ཅེས་པར་བཟོ་བཅོས་བྱེད།"
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr "སྒུག་སྡོད་ཅེས་པར་བཟོ་བཅོས་བྱེད།"
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr "མལ་གསོ་ཞེས་པར་བཟོ་བཅོས་བྱེད།"
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr "མངོན་ཆས་སྒོ་བརྒྱབ་ཅེས་པར་བཟོ་བཅོས་བྱེད།"
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr "སྒོ་རྒྱག་པ་ལ་བཅོས་པ།"
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr "བཀོལ་སྤྱོད་གང་ཡང་བྱས་མེད་པར་བཟོ་བཅོས་བྱེད།"
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr "%qའབྲེལ་ཐུབ་པ།"
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%qབཅད་ཟིན།"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "%qཁ་ཕྱེ་བ་མ་ཟད་འཕྲིན་སྐྱེལ་གྱི་ཁྱབ་ཁོངས་ནང་ཡོད་མིན་གཏན་ཁེལ་བྱེད་རོགས།"
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+"%qའདི་%qདང་ཡང་བསྐྱར་སྦྲེལ་ཐབས་བྲལ། "
+"སྒྲིག་ཆས་འདི་ཉིད་སྣང་མེད་དུ་བཏང་ནས་ཡང་བསྐྱར་ཆ་སྡེབ་བྱེད།"
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "སྟོང་པ།"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "རྒྱུད་ཁོངས་ཀྱི་དུས་ཚོད་སྒྲིག་འགོད་བྱེད་པར་ར་སྤྲོད་བྱེད་དགོས།"
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr "དྲ་རྒྱའི་དུས་ཚོད་མཉམ་བགྲོད་ཁ་ཕྱེ་བའམ་བརྒྱབ་པར་ར་སྤྲོད་བྱེད་དགོས།"
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "དུས་ཚོད་ཀྱི་ཞབས་ཞུ་འཕྲུལ་ཆས་བཟོ་བཅོས་བྱེད་པར་ར་སྤྲོད་བྱེད་དགོས།"
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr ""
+"སྲ་ཆས་སྒྲིག་འགོད་བྱས་ཏེ་རང་སའི་དུས་ཚོད་དམ་UTC སྤྱོད་པར་ར་སྤྲོད་བྱེད་དགོས།"
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "རྒྱུད་ཁོངས་ཀྱི་དུས་ཁུལ་སྒྲིག་འགོད་བྱེད་པར་ར་སྤྲོད་བྱེད་དགོས།"

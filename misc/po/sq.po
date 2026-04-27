@@ -1,0 +1,667 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# deepiner, 2025
+# Besnik Bleta <besnik@programeshqip.org>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2026\n"
+"Language-Team: Albanian (https://app.transifex.com/linuxdeepin/teams/3617/sq/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "Ju lutemi, jepni një fjalëkalim jo më të pakët se 8 shenja"
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"Fjalëkalimet mund të përmbajnë vetëm shkronja anglisht (bëhet dallimi mes "
+"shkrimit me të mëdha dhe të vogla), numra ose simbole speciale "
+"(~!@#$%^&*()[]{}\\|/?,.<>)"
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "Emri i përdoruesit s’mund të jetë i zbrazët"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "Shenja e parë duhet të jetë shkronjë ose numër"
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "Emri i përdoruesi ekziston tashmë"
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "Emri i grupit ekziston tashmë"
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "Emri i përdoruesit duhet të jetë mes 3 dhe 32 shenja i gjatë"
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr ""
+"Përdoruesi “%s” ekzistonte më parë dhe të dhënat e tij janë njëkohësuar"
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr ""
+"Ky sfond sistemi është i kyçur. Ju lutemi, lidhuni me përgjegjësin tuaj."
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr "S’u arrit të ndryshohej Shërbyes Audio, ju lutemi, provoni më vonë"
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr "Po ndryshohet Shërbyes Audio, ju lutemi, pritni…"
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr ""
+"Shërbyesi Audio u ndryshua, ju lutemi, dilni nga llogaria dhe mandej hyni "
+"prapë"
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr ""
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%s është çaktivizuar"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "Hap"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "Portë seriale"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "Rrjet dial-up"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "Pajisje hands-free"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "Kanal zëri për hands-free"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "Kanal zëri për headset"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr ""
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "Shpërngulje kartelash"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "Njëkohësim"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "Hyrje në libër telefonash"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "Klient hyrjeje në libër telefonash"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "Hyrje në mesazhe"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "Njoftim mesazhesh"
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "Anuloje"
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr "Po merret %[1]q"
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "Shiheni"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "Morët me sukses kartela nga %q"
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "U bë"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "Resht Së Marri Kartela"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "E keni anuluar shpërnguljen e kartelave"
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "Lidhja përmes Bluetooth-it dështoi"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "Hidhe poshtë"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "Merre"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "Shpërngulje Bluetooth Kartelash"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "%q dëshiron t’ju dërgojë kartela. Të merren?"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "Marrjes së %q i mbaroi koha"
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "Klikoni këtu që të lidhet me %q"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "Shtoni pajisje Bluetooth"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "Çiftoje"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr "Maksimizoje Dritaren"
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr "Riktheje Dritaren"
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr "Ndarje Majtas e Dritares së Tanishme"
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr "Ndarje Djathtas e Dritares së Tanishme"
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr "Shfaq pamje “multitasking”"
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr "Fshihe pamjen “multitasking”"
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr "Kalo te desktopi i mëparshëm"
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr "Kalo te desktopi pasues"
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "Shfaq desktop"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr "Fshihe desktopin"
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr "Shfaq/fshih nisës"
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr "Butoni i djathtë i miut i shtypur"
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr "Butoni i majtë i miut i shtypur"
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr "Shfaq/fshih të papastrën"
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr "Shfaq/fshih kërkimin e madh"
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr "Shfaq/fshih qendër njoftimesh"
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr "Çaktivizoje"
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr ""
+"Hapësirë e pamjaftueshme disku, ju lutemi, ka ardhur koha të bëni pastrim!"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr "Kalo te spastrim"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "Nisës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "Regjistrues Ekrani"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "Kyçe ekranin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "Shfaq/Fshih panelin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "Fike ndërfaqen"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "Dritare Terminali Quake"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "Foto ekrani"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "Foto ekrani e plotë"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "Foto ekrani e dritares"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "Vonesë fotoje ekrani"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr "OCR (Nga Figurë në Tekst)"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "Përgjegjës kartelash"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "Çaktivizo Touchpad-in"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "Ndërro efekte dritaresh"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "Mbikëqyrës Sistemi"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "Zgjedhës Deepin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "Tekst në të Folur"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "E folur në Tekst"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "E papastër"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "Përkthim"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "Kërkim i Madh"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "Qendër Njoftimesh"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "Ndërroni Skemë"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "Kalo te hapësira e punës majtas"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "Kalo te hapësira e punës djathtas"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "Kaloje dritaren te hapësira e sipërme e punës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "Kalo te hapësira e poshtme e punës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "Këmbe dritare të ngjashme"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "Këmbe dritare të ngjashme në të kundërt"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "Këmbe dritare"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "Këmbe dritare në të kundërt"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr "Aktivizo menu dritaresh"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "Maksimizo dritaren"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "Riktheje dritaren"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "Minimizoje dritaren"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "Mbylle dritaren"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "Lëvizeni dritaren"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "Ripërmasojeni dritaren"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "Kaloje te hapësira e punës majtas"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "Kaloje te hapësira e punës djathtas"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "Kaloje te hapësira e sipërme e punës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "Kaloje te hapësira e poshtme e punës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "Shfaq dritaret e krejt hapësirave të punës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "Shfaq dritaret e hapësirës së tanishme të punës"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "Shfaq hapësirë pune"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "Zmadhoje"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "Zvogëloje"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr "Sa Madhësia Faktike"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr ""
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr ""
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "Që të këmbehet gjuha, lypset mirëfilltësim"
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+"Po ndryshohet gjuhë sistemi dhe po instalohen paketat e domosdoshme të "
+"gjuhës, ju lutemi, pritni…"
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "Po ndryshohet gjuhë sistemi, ju lutemi, pritni…"
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr "Gjuha e sistemit u ndryshua, ju lutemi, dilni dhe mandej hyni"
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr "S’u arrit të ndryshohej gjuhë sistemi, ju lutemi, provoni më vonë"
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid "\"%s\" did not pass the system security verification, and cannot run now"
+msgstr ""
+"“%s” s’e kaloi verifikimin e sigurisë së sistemit dhe s’mund të xhirohet "
+"këtë herë"
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+"S’mund të xhironi “%s” e paverifikuar, por mund të ndryshoni rregullimet te "
+"Qendër Sigurie."
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr "Vazhdo"
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr "Sistemi do të fiket automatikisht pas %d s"
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr "Fikje e Planifikuar"
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr "Anuloje"
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "Fike"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "Bateri e pakët në nivel kritik"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "Bateri e pakët, ju lutemi, vëreni në prizë"
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr "kompjuteri juaj do të fiket"
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr "kompjuteri juaj do të pezullohet"
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr "kompjuteri juaj do të plogështohet"
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr "monitori juaj do të fiket"
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr "monitori juaj do të shfaqë skenën e fikjes"
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr "s’do të ndodhë gjë në kompjuterin tuaj"
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr "%q u lidh me sukses"
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%q u shkëput"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "Sigurohuni që %q është hapur dhe brenda intervali"
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+"%q s’mund të lidhet më me %q. Provoni të harrohet kjo pajisje dhe ta çiftoni"
+" sërish."
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "Hapësirë"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "Që të ujdisni kohën e sistemit, lypset mirëfilltësim"
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr ""
+"Që të kontrolloni nëse duhet aktivizuar apo jo njëkohësimi i kohës së "
+"rrjetit, lypset mirëfilltësim"
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "Që të ndryshoni shërbyes NTP, lypset mirëfilltësim"
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr ""
+"Që të kontrolloni nëse RTC-ja depoziton kohën vendore apo atë UTC, lypset "
+"mirëfilltësim"
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "Që të ujdisni zonën kohore të sistemit, lypset mirëfilltësim"

@@ -1,0 +1,666 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Joonas Tamminen <hippimunqqi@gmail.com>, 2025
+# Kimmo Siniluoto <robotti1984@gmail.com>, 2025
+# ImSpaceman, 2025
+# Maggie Liu <maggie.liufei@gmail.com>, 2025
+# Deathmist, 2025
+# deepiner, 2025
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 14:27+0800\n"
+"PO-Revision-Date: 2025-04-25 07:00+0000\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2026\n"
+"Language-Team: Finnish (https://app.transifex.com/linuxdeepin/teams/3617/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../accounts1/checkers/password.go:38
+msgid "Please enter a password not less than 8 characters"
+msgstr "Syötä salasana, jonka pituus on vähintään 8 merkkiä"
+
+#: ../../accounts1/checkers/password.go:40
+#, c++-format
+msgid ""
+"The password must contain English letters (case-sensitive), numbers or "
+"special symbols (~!@#$%^&*()[]{}\\|/?,.<>)"
+msgstr ""
+"Salasanan pitää sisältää kirjaimia (isot ja pienet kirjaimet), numeroita tai"
+" erikoismerkkejä (~!@#$%^&*()[]{}\\|/?,.<>)"
+
+#: ../../accounts1/checkers/username.go:49
+msgid "Username cannot be empty"
+msgstr "Käyttäjätunnus on pakollinen kenttä"
+
+#: ../../accounts1/checkers/username.go:54
+msgid "The first character must be a letter or number"
+msgstr "Ensimmäisen merkin on oltava kirjain tai numero"
+
+#: ../../accounts1/checkers/username.go:57
+msgid "The username already exists"
+msgstr "Käyttäjänimi on jo olemassa"
+
+#: ../../accounts1/checkers/username.go:60
+msgid "The group name already exists"
+msgstr "Ryhmän nimi on jo olemassa"
+
+#: ../../accounts1/checkers/username.go:62
+msgid "Username must be between 3 and 32 characters"
+msgstr "Käyttäjätunnuksen on oltava 3-32 merkin pituinen"
+
+#: ../../accounts1/manager.go:571
+#, c-format
+msgid "User \"%s\" existed before and its data is synced"
+msgstr "Käyttäjä \"%s\" oli aiemmin ja sen tiedot synkronoidaan"
+
+#: ../../accounts1/user_ifc.go:728
+msgid "This system wallpaper is locked. Please contact your admin."
+msgstr ""
+"Tämä järjestelmän taustakuva on lukittu. Ota yhteyttä "
+"järjestelmänvalvojaasi."
+
+#: ../../audio1/audio.go:259
+msgid "Failed to change Audio Server, please try later"
+msgstr "Palvelimen Audio Server vaihto epäonnistui, yritä myöhemmin"
+
+#: ../../audio1/audio.go:295
+msgid "Changing Audio Server, please wait..."
+msgstr "Vaihdetaan palvelinta Audio Server, odota..."
+
+#: ../../audio1/audio.go:328
+msgid "Audio Server changed, please log out and then log in"
+msgstr "Palvelin Audio Server vaihdettu, kirjaudu ulos ja sitten sisään"
+
+#: ../../audio1/audio.go:343 ../../audio1/audio_events.go:719
+#: ../../bluetooth1/obex_agent.go:443 ../../bluetooth1/obex_agent.go:458
+#: ../../bluetooth1/obex_agent.go:485 ../../bluetooth1/obex_agent.go:530
+#: ../../bluetooth1/obex_agent.go:609 ../../bluetooth1/utils_notify.go:77
+#: ../../bluetooth1/utils_notify.go:143
+msgid "dde-control-center"
+msgstr "Ohjauspaneli"
+
+#: ../../audio1/audio_events.go:713
+#, c-format
+msgid "%s had been disabled"
+msgstr "%s poistettu käytöstä"
+
+#: ../../audio1/audio_events.go:714
+msgid "Open"
+msgstr "Avaa"
+
+#: ../../bluetooth1/bluez_profile.go:15
+#: ../../system/bluetooth1/bluez_profile.go:15
+msgid "Serial port"
+msgstr "Sarjaportti"
+
+#: ../../bluetooth1/bluez_profile.go:16
+#: ../../system/bluetooth1/bluez_profile.go:16
+msgid "Dial-Up networking"
+msgstr "Puhelinverkkoyhteys"
+
+#: ../../bluetooth1/bluez_profile.go:17
+#: ../../system/bluetooth1/bluez_profile.go:17
+msgid "Hands-Free device"
+msgstr "Handsfree-laite"
+
+#: ../../bluetooth1/bluez_profile.go:18
+#: ../../system/bluetooth1/bluez_profile.go:18
+msgid "Hands-Free voice gateway"
+msgstr "Handsfree ulostulo äänelle"
+
+#: ../../bluetooth1/bluez_profile.go:19
+#: ../../system/bluetooth1/bluez_profile.go:19
+msgid "Headset voice gateway"
+msgstr "Kuulokkeiden äänen ulostulo"
+
+#: ../../bluetooth1/bluez_profile.go:20
+#: ../../system/bluetooth1/bluez_profile.go:20
+msgid "Object push"
+msgstr "Kohteen työntö"
+
+#: ../../bluetooth1/bluez_profile.go:21
+#: ../../system/bluetooth1/bluez_profile.go:21
+msgid "File transfer"
+msgstr "Tiedostonsiirto"
+
+#: ../../bluetooth1/bluez_profile.go:22
+#: ../../system/bluetooth1/bluez_profile.go:22
+msgid "Synchronization"
+msgstr "Synkronointi"
+
+#: ../../bluetooth1/bluez_profile.go:23
+#: ../../system/bluetooth1/bluez_profile.go:23
+msgid "Phone book access"
+msgstr "Pääsy puhelinluetteloon"
+
+#: ../../bluetooth1/bluez_profile.go:24
+#: ../../system/bluetooth1/bluez_profile.go:24
+msgid "Phone book access client"
+msgstr "Puhelinluettelon asiakasohjelma"
+
+#: ../../bluetooth1/bluez_profile.go:25
+#: ../../system/bluetooth1/bluez_profile.go:25
+msgid "Message access"
+msgstr "Viesteihin pääsy"
+
+#: ../../bluetooth1/bluez_profile.go:26
+#: ../../system/bluetooth1/bluez_profile.go:26
+msgid "Message notification"
+msgstr "Ilmoitusviesti"
+
+#: ../../bluetooth1/obex_agent.go:439 ../../bluetooth1/utils_notify.go:130
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: ../../bluetooth1/obex_agent.go:447
+msgid "Receiving %[1]q"
+msgstr "Vastaanotetaan %[1]q"
+
+#: ../../bluetooth1/obex_agent.go:455
+msgid "View"
+msgstr "Katsele"
+
+#: ../../bluetooth1/obex_agent.go:461
+msgid "You have received files from %q successfully"
+msgstr "Olet vastaanottanut tiedostoja käyttäjältä %q onnistuneesti"
+
+#: ../../bluetooth1/obex_agent.go:462
+msgid "Done"
+msgstr "Valmis"
+
+#: ../../bluetooth1/obex_agent.go:477 ../../bluetooth1/obex_agent.go:612
+msgid "Stop Receiving Files"
+msgstr "Lopeta tiedostojen vastaanotto"
+
+#: ../../bluetooth1/obex_agent.go:479
+msgid "You have cancelled the file transfer"
+msgstr "Olet peruuttanut tiedostonsiirron"
+
+#: ../../bluetooth1/obex_agent.go:481
+#: ../../system/bluetooth1/utils_notify.go:63
+#: ../../system/bluetooth1/utils_notify.go:72
+msgid "Bluetooth connection failed"
+msgstr "Bluetooth-yhteyden muodostaminen epäonnistui"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Decline"
+msgstr "Kieltäydy"
+
+#: ../../bluetooth1/obex_agent.go:527
+msgid "Receive"
+msgstr "Vastaanota"
+
+#: ../../bluetooth1/obex_agent.go:533
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth-tiedostonsiirto"
+
+#: ../../bluetooth1/obex_agent.go:534
+msgid "%q wants to send files to you. Receive?"
+msgstr "%q haluaa lähettää tiedostoja sinulle. Otatko vastaan?"
+
+#: ../../bluetooth1/obex_agent.go:613
+msgid "Receiving %q timed out"
+msgstr "Vastaanotto kohteesta %q aikakatkaistiin"
+
+#: ../../bluetooth1/utils_notify.go:119
+msgid "Click here to connect to %q"
+msgstr "Yhteys napsauttamalla tätä %q"
+
+#: ../../bluetooth1/utils_notify.go:120
+msgid "Add Bluetooth devices"
+msgstr "Lisää Bluetooth-laitteita"
+
+#: ../../bluetooth1/utils_notify.go:130
+msgid "Pair"
+msgstr "Pari"
+
+#: ../../gesture1/gesture_action.go:39
+msgid "Maximize Window"
+msgstr "Suurenna ikkuna"
+
+#: ../../gesture1/gesture_action.go:40
+msgid "Restore Window"
+msgstr "Palauta ikkuna"
+
+#: ../../gesture1/gesture_action.go:41
+msgid "Current Window Left Split"
+msgstr "Ikkuna vasemmalle jaettuna"
+
+#: ../../gesture1/gesture_action.go:42
+msgid "Current Window Right Split"
+msgstr "Ikkuna oikealle jaettuna"
+
+#: ../../gesture1/gesture_action.go:43
+msgid "Show multitasking view"
+msgstr "Näytä työtilat näkymä"
+
+#: ../../gesture1/gesture_action.go:44
+msgid "Hide multitasking view"
+msgstr "Piilota työtilat näkymä"
+
+#: ../../gesture1/gesture_action.go:45
+msgid "Switch to previous desktop"
+msgstr "Vaihda edelliseen työpöytään"
+
+#: ../../gesture1/gesture_action.go:46
+msgid "Switch to the next desktop"
+msgstr "Vaihda seuraavaan työpöytään"
+
+#: ../../gesture1/gesture_action.go:47
+#: ../../keybinding1/shortcuts/id_name_map.go:84
+msgid "Show desktop"
+msgstr "Näytä työpöytä"
+
+#: ../../gesture1/gesture_action.go:48
+msgid "Hide desktop"
+msgstr "Piilota työpöytä"
+
+#: ../../gesture1/gesture_action.go:49
+msgid "Show/hide launcher"
+msgstr "Näytä tai piillota käynnistin"
+
+#: ../../gesture1/gesture_action.go:50
+msgid "Mouse right button pressed"
+msgstr "Kun hiiren oikeaa painetaan"
+
+#: ../../gesture1/gesture_action.go:51
+msgid "Mouse right button released"
+msgstr "Kun hiiren oikea vapautettu"
+
+#: ../../gesture1/gesture_action.go:52
+msgid "Show/hide clipboard"
+msgstr "Näytä tai piillota leikepöytä"
+
+#: ../../gesture1/gesture_action.go:53
+msgid "Show/hide grand search"
+msgstr "Näytä tai piillota haku"
+
+#: ../../gesture1/gesture_action.go:54
+msgid "Show/hide notification center"
+msgstr "Näytä tai piillota ilmoitukset"
+
+#: ../../gesture1/gesture_action.go:55
+msgid "Disable"
+msgstr "Pois"
+
+#: ../../housekeeping/init.go:136
+msgid "Insufficient disk space, please clean up in time!"
+msgstr "Riittämätön levytila, ole hyvä ja siivoa ajoissa!"
+
+#: ../../housekeeping/init.go:137
+msgid "Go to clean up"
+msgstr "Siivoa"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:13
+msgid "Launcher"
+msgstr "Käynnistin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:14
+msgid "Terminal"
+msgstr "Pääte"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:15
+msgid "Screen Recorder"
+msgstr "Näytön tallennin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:16
+msgid "Lock screen"
+msgstr "Lukitse näyttö"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:17
+msgid "Show/Hide the dock"
+msgstr "Näytä/Piilota telakka"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:18
+msgid "Shutdown interface"
+msgstr "Sammuttamisen käyttöliittymä"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:19
+msgid "Terminal Quake Window"
+msgstr "Quake terminaali"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:20
+msgid "Screenshot"
+msgstr "Kaappaus"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:21
+msgid "Full screenshot"
+msgstr "Kokonäytön kaappaus"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:22
+msgid "Window screenshot"
+msgstr "Ikkunan kaappaus"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:23
+msgid "Delay screenshot"
+msgstr "Viivytä kaappausta"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:24
+msgid "OCR (Image to Text)"
+msgstr "OCR (kuva tekstiksi)"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:25
+msgid "Scrollshot"
+msgstr "Vierityskuva"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:26
+msgid "File manager"
+msgstr "Tiedostonhallinta"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:27
+msgid "Disable Touchpad"
+msgstr "Sulje kosketuslevy"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:28
+msgid "Switch window effects"
+msgstr "Vaihda ikkunatehosteita"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:29
+msgid "Fast Screen Off"
+msgstr "Sammuta näyttö"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:30
+msgid "System Monitor"
+msgstr "Järjestelmän valvonta"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:31
+msgid "Deepin Picker"
+msgstr "Deepin värinvalitsija"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:32
+msgid "Text to Speech"
+msgstr "Teksti puheeksi"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:33
+msgid "Speech to Text"
+msgstr "Puhe tekstiksi"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:34
+msgid "Clipboard"
+msgstr "Leikepöydälle"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:35
+msgid "Translation"
+msgstr "Käännös"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:36
+msgid "Grand Search"
+msgstr "Suuri haku"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:37
+msgid "Notification Center"
+msgstr "Ilmoituskeskus"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:38
+#: ../../keybinding1/shortcuts/id_name_map.go:46
+msgid "Switch Layout"
+msgstr "Vaihda asettelu"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:39
+msgid "Toggle multiple displays"
+msgstr "Kytke useita näyttöjä"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:65
+msgid "Switch to left workspace"
+msgstr "Siirry vasempaan työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:66
+msgid "Switch to right workspace"
+msgstr "Siirry oikeaan työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:67
+msgid "Switch to upper workspace"
+msgstr "Siirry ylempään työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:68
+msgid "Switch to lower workspace"
+msgstr "Vaihda alempaan työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:70
+msgid "Switch similar windows"
+msgstr "Vaihda samankaltaiset ikkunat"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:71
+msgid "Switch similar windows in reverse"
+msgstr "Vaihda samankaltaiset ikkunat vastakkaisiksi"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:72
+msgid "Switch windows"
+msgstr "Vaihda ikkunoita"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:73
+msgid "Switch windows in reverse"
+msgstr "Vaihda ikkunoita päinvastoin"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:89
+msgid "Activate window menu"
+msgstr "Aktivoi ikkunavalikko"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:93
+msgid "Maximize window"
+msgstr "Maksimoi ikkuna"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:94
+msgid "Restore window"
+msgstr "Palauta ikkuna"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:96
+msgid "Minimize window"
+msgstr "Pienennä ikkuna"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:97
+msgid "Close window"
+msgstr "Sulje paneeli"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:98
+msgid "Move window"
+msgstr "Siirrä ikkuna"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:99
+msgid "Resize window"
+msgstr "Ikkunan koko"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:114
+msgid "Move to left workspace"
+msgstr "Siirry vasempaan työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:115
+msgid "Move to right workspace"
+msgstr "Siirry oikeaan työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:116
+msgid "Move to upper workspace"
+msgstr "Siirry ylempään työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:117
+msgid "Move to lower workspace"
+msgstr "Siirry alempaan työtilaan"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:139
+msgid "Display windows of all workspaces"
+msgstr "Näytä kaikkien työtilojen ikkunat"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:140
+msgid "Display windows of current workspace"
+msgstr "Näytä nykyisen työtilan ikkunat"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:141
+msgid "Display workspace"
+msgstr "Näytä työtila"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:142
+msgid "Zoom In"
+msgstr "Suurenna sisään"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:143
+msgid "Zoom Out"
+msgstr "Suurenna ulos"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:144
+msgid "Zoom to Actual Size"
+msgstr "Suurenna oikeaan kokoon"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:145
+msgid "Window Quick Tile Left"
+msgstr "Ikkuna pikaruutuna vasemmalle"
+
+#: ../../keybinding1/shortcuts/id_name_map.go:146
+msgid "Window Quick Tile Right"
+msgstr "Ikkuna pikaruutuna oikealle"
+
+#: ../../langselector1/locale.go:46
+msgid "Authentication is required to switch language"
+msgstr "Kielen vaihtaminen vaatii tunnistautumisen"
+
+#: ../../langselector1/locale.go:143
+msgid ""
+"Changing system language and installing the required language packages, "
+"please wait..."
+msgstr ""
+"Järjestelmän kielen muuttaminen ja tarvittavien kielipakettien asentaminen "
+"odota ..."
+
+#: ../../langselector1/locale.go:144
+msgid "Changing system language, please wait..."
+msgstr "Järjestelmän kielen muuttaminen odota ..."
+
+#: ../../langselector1/locale.go:145
+msgid "System language changed, please log out and then log in"
+msgstr "Järjestelmän kieli muuttui, kirjaudu ulos ja kirjaudu sisään"
+
+#: ../../langselector1/locale.go:396
+msgid "Failed to change system language, please try later"
+msgstr "Järjestelmän kielen vaihtaminen epäonnistui, yritä myöhemmin"
+
+#: ../../service_trigger/msg.go:11
+#, c-format
+msgid "\"%s\" did not pass the system security verification, and cannot run now"
+msgstr ""
+"\"%s\" ei läpäistänyt järjestelmän suojauksen vahvistusta, eikä sitä voi "
+"suorittaa nyt"
+
+#: ../../service_trigger/msg.go:13
+#, c-format
+msgid ""
+"You cannot run the unverified \"%s\", but you can change the settings in "
+"Security Center."
+msgstr ""
+"Et voi suorittaa vahvistamatonta ohjelmaa \"%s\", mutta voit muuttaa sen "
+"asetuksia Turvakeskuksessa."
+
+#: ../../service_trigger/msg.go:15
+msgid "Proceed"
+msgstr "Jatka"
+
+#: ../../session/power1/manager.go:1255
+#, c-format
+msgid "The system will shut down automatically after %d s"
+msgstr "Tietokone sammuu automaattisesti %d s"
+
+#: ../../session/power1/manager.go:1256
+msgid "Scheduled Shutdown"
+msgstr "Ajastettu sammutus"
+
+#: ../../session/power1/manager.go:1257
+msgid "Cancle"
+msgstr "Peruuta"
+
+#: ../../session/power1/manager.go:1257
+msgid "Shut down"
+msgstr "Sammuta"
+
+#: ../../session/power1/manager_events.go:283
+msgid "Battery critically low"
+msgstr "Akku kriittisesti alhainen"
+
+#: ../../session/power1/manager_events.go:308
+#: ../../session/power1/manager_events.go:313
+#: ../../session/power1/manager_events.go:318
+#: ../../session/power1/manager_events.go:323
+msgid "Battery low, please plug in"
+msgstr "Virtataso alhainen, ole hyvä ja yhdistä verkkovirtaan"
+
+#: ../../session/power1/utils.go:674
+msgid "your computer will shut down"
+msgstr "tietokoneesi sammuu"
+
+#: ../../session/power1/utils.go:676
+msgid "your computer will suspend"
+msgstr "tietokoneesi siirtyy lepotilaan"
+
+#: ../../session/power1/utils.go:678
+msgid "your computer will hibernate"
+msgstr "tietokoneesi siirtyy valmiustilaan"
+
+#: ../../session/power1/utils.go:680
+msgid "your monitor will turn off"
+msgstr "näyttö sammuu"
+
+#: ../../session/power1/utils.go:682
+msgid "your monitor will show the shutdown interface"
+msgstr "näytössäsi näkyy sammutusliittymä"
+
+#: ../../session/power1/utils.go:684
+msgid "it will do nothing to your computer"
+msgstr "se ei tee mitään"
+
+#: ../../system/bluetooth1/utils_notify.go:43
+msgid "Connect %q successfully"
+msgstr "Yhdistetty %q onnistuneesti"
+
+#: ../../system/bluetooth1/utils_notify.go:50
+msgid "%q disconnected"
+msgstr "%q irrotettu"
+
+#: ../../system/bluetooth1/utils_notify.go:56
+msgid "Make sure %q is turned on and in range"
+msgstr "Varmista että %q on päällä ja kantaman sisällä"
+
+#: ../../system/bluetooth1/utils_notify.go:74
+msgid ""
+"%q can no longer connect to %q. Try to forget this device and pair it again."
+msgstr ""
+"%q ei voi muodostaa yhteyttä kohteeseen %q. Unohda tämä laite ja parita se "
+"uudelleen."
+
+#: ../../timedate1/manager_format.go:75
+msgid "Space"
+msgstr "Välilyönti"
+
+#: ../../timedate1/manager_ifc.go:60
+msgid "Authentication is required to set the system time"
+msgstr "Ajan asettaminen vaatii tunnistautumisen."
+
+#: ../../timedate1/manager_ifc.go:73
+msgid ""
+"Authentication is required to control whether network time synchronization "
+"shall be enabled"
+msgstr ""
+"Todennus on tarpeen, jotta voidaan määrittää, onko verkkoajan synkronointi "
+"käytössä"
+
+#: ../../timedate1/manager_ifc.go:83
+msgid "Authentication is required to change NTP server"
+msgstr "NTP-palvelimen muuttamiseen tarvitaan tunnistautuminen"
+
+#: ../../timedate1/manager_ifc.go:127
+msgid ""
+"Authentication is required to control whether the RTC stores the local or "
+"UTC time"
+msgstr "Todentaminen edellyttää, että RTC tallentaa paikallisen tai UTC-ajan"
+
+#: ../../timedate1/manager_ifc.go:153
+msgid "Authentication is required to set the system timezone"
+msgstr "Aikavyöhykkeen asettaminen vaatii tunnistautumisen"

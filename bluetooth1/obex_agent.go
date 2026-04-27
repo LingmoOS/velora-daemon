@@ -1,0 +1,663 @@
+// SPDX-FileCopyrightText: 2018 - 2026 UnionTech Software Technology Co., Ltd.
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+package bluetooth
+
+import (
+	"errors"
+	"fmt"
+	"math"
+	"math/rand"
+	"os/exec"
+	"path/filepath"
+	"strings"
+	"sync"
+	"time"
+
+	dutils "github.com/linuxdeepin/go-lib/utils"
+
+	"github.com/godbus/dbus/v5"
+	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
+	obex "github.com/linuxdeepin/go-dbus-factory/system/org.bluez.obex"
+	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/linuxdeepin/go-lib/gettext"
+	"github.com/linuxdeepin/go-lib/xdg/userdir"
+
+	sessionwatcher "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionwatcher1"
+)
+
+const (
+	obexAgentDBusPath      = dbusPath + "/ObexAgent"
+	obexAgentDBusInterface = "org.bluez.obex.Agent1"
+
+	receiveFileNotifyTimeout = int32(30 * time.Second / time.Millisecond)
+	receiveFileNeverTimeout  = 0
+)
+
+var receiveBaseDir = userdir.Get(userdir.Download)
+
+// https://specifications.freedesktop.org/notification/latest/protocol.html#id-1.10.4.2.4
+type cancelReason uint32
+
+const (
+	_                     cancelReason = iota
+	CancelReasonExpired                // The notification expired.
+	CancelReasonDismiss                // The notification was dismissed by the user.
+	CancelReasonManual                 // The notification was closed by a call to CloseNotification.
+	CancelReasonUndefined              // Undefined/reserved reasons.
+)
+
+func (c cancelReason) String() string {
+	switch c {
+	case CancelReasonExpired:
+		return "expired"
+	case CancelReasonDismiss:
+		return "dismissed by user"
+	case CancelReasonManual:
+		return "closed by call to CloseNotification"
+	default:
+		return "undefined reason"
+	}
+}
+
+type obexAgent struct {
+	b *Bluetooth
+
+	service *dbusutil.Service
+	sigLoop *dbusutil.SignalLoop
+
+	obexManager    obex.Manager
+	sessionWatcher sessionwatcher.SessionWatcher
+
+	cancelCh   chan cancelReason
+	cancelChMu sync.Mutex
+
+	receiveCh   chan struct{}
+	receiveChMu sync.Mutex
+
+	acceptedSessions   map[dbus.ObjectPath]int
+	acceptedSessionsMu sync.Mutex
+
+	notify   notifications.Notifications
+	notifyID uint32
+}
+
+type transferObj struct {
+	obex.Transfer
+	sessionPath  dbus.ObjectPath
+	deviceName   string
+	oriFilename  string
+	tempFileName string
+}
+
+func (*obexAgent) GetInterfaceName() string {
+	return obexAgentDBusInterface
+}
+
+func newObexAgent(service *dbusutil.Service, bluetooth *Bluetooth) *obexAgent {
+	return &obexAgent{
+		b:                bluetooth,
+		service:          service,
+		acceptedSessions: make(map[dbus.ObjectPath]int),
+	}
+}
+
+func (a *obexAgent) init() {
+	sessionBus := a.service.Conn()
+	a.obexManager = obex.NewManager(sessionBus)
+
+	a.sigLoop = dbusutil.NewSignalLoop(sessionBus, 0)
+	a.sigLoop.Start()
+
+	a.sessionWatcher = sessionwatcher.NewSessionWatcher(sessionBus)
+	a.sessionWatcher.InitSignalExt(a.sigLoop, true)
+
+	active, err := a.sessionWatcher.IsActive().Get(0)
+	if err != nil {
+		logger.Debug("failed to get session active status:", err)
+		active = true // default to true if failed
+	}
+
+	if active {
+		a.registerAgent()
+	}
+
+	err = a.sessionWatcher.IsActive().ConnectChanged(func(hasValue bool, val bool) {
+		logger.Debug("session active changed:", hasValue, val)
+		if !hasValue {
+			return
+		}
+		if val {
+			a.registerAgent()
+		} else {
+			a.unregisterAgent()
+		}
+	})
+	if err != nil {
+		logger.Warning("failed to connect session active changed signal:", err)
+	}
+}
+
+// registerAgent 注册 OBEX 的代理
+func (a *obexAgent) registerAgent() {
+	logger.Info("register obex agent", obexAgentDBusPath)
+	err := a.obexManager.AgentManager().RegisterAgent(0, obexAgentDBusPath)
+	if err != nil {
+		logger.Error("failed to register obex agent:", err)
+	}
+}
+
+// unregisterAgent 注销 OBEX 的代理
+func (a *obexAgent) unregisterAgent() {
+	logger.Info("unregister obex agent", obexAgentDBusPath)
+	err := a.obexManager.AgentManager().UnregisterAgent(0, obexAgentDBusPath)
+	if err != nil {
+		logger.Error("failed to unregister obex agent:", err)
+	}
+
+	cmd := exec.Command("systemctl", "--user", "stop", "obex.service")
+	if err := cmd.Run(); err != nil {
+		logger.Warning("failed to stop obex.service:", err)
+	}
+}
+
+// AuthorizePush 用于请求用户接收文件
+func (a *obexAgent) AuthorizePush(transferPath dbus.ObjectPath) (tempFileName string, busErr *dbus.Error) {
+	logger.Infof("dbus call obexAgent AuthorizePush with transferPath %v", transferPath)
+
+	transfer, err := obex.NewTransfer(a.service.Conn(), transferPath)
+	if err != nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+
+	oriFilename, err := transfer.Name().Get(0)
+	if err != nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+	tempFileName = randFileName(oriFilename)
+	if len(tempFileName) > 255 {
+		tempFileName = tempFileName[:255]
+	}
+	sessionPath, err := transfer.Session().Get(0)
+	if err != nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+	logger.Debug("session path:", sessionPath)
+
+	session, err := obex.NewSession(a.service.Conn(), sessionPath)
+	if err != nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+
+	deviceAddress, err := session.Session().Destination().Get(0)
+	if err != nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+
+	dev := a.b.getDeviceByAddress(deviceAddress)
+	if dev == nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+
+	deviceName := dev.Alias
+	if len(deviceName) == 0 {
+		deviceName = dev.Name
+	}
+	transferObj := &transferObj{
+		transfer,
+		sessionPath,
+		deviceName,
+		oriFilename,
+		tempFileName,
+	}
+	accepted, err := a.isSessionAccepted(transferObj)
+	if err != nil {
+		logger.Warning(err)
+		return "", dbusutil.ToError(err)
+	}
+	if !accepted {
+		err = errors.New("session declined")
+		logger.Warning(err)
+		dbusErr := &dbus.Error{
+			Name: "org.bluez.obex.Error.Rejected",
+			Body: []any{err.Error()},
+		}
+		return "", dbusErr
+	}
+	// 设置未文件不能传输状态
+	a.b.setPropTransportable(false)
+
+	return tempFileName, nil
+}
+
+func (a *obexAgent) isSessionAccepted(transfer *transferObj) (bool, error) {
+	if transfer == nil {
+		return false, errors.New("valid object")
+	}
+
+	a.acceptedSessionsMu.Lock()
+	_, accepted := a.acceptedSessions[transfer.sessionPath]
+	a.acceptedSessionsMu.Unlock()
+
+	if !accepted {
+		// 多个文件传输时只第一次判断可传输状态
+		if !a.b.Transportable {
+			return false, errors.New("declined")
+		}
+
+		accepted, err := a.requestReceive(transfer.deviceName, transfer.oriFilename)
+		if err != nil || !accepted {
+			return false, err
+		}
+
+		a.acceptedSessionsMu.Lock()
+		if _, recheck := a.acceptedSessions[transfer.sessionPath]; !recheck {
+			a.acceptedSessions[transfer.sessionPath] = 0
+			a.notify = notifications.NewNotifications(a.service.Conn())
+			a.notify.InitSignalExt(a.sigLoop, true)
+			a.notifyID = 0
+			a.receiveChMu.Lock()
+			a.receiveCh = make(chan struct{}, 1)
+			a.receiveCh <- struct{}{}
+			a.receiveChMu.Unlock()
+		}
+		a.acceptedSessionsMu.Unlock()
+	}
+
+	a.receiveChMu.Lock()
+	ch := a.receiveCh
+	a.receiveChMu.Unlock()
+
+	if ch != nil {
+		<-ch
+	}
+
+	a.receiveProgress(transfer)
+
+	a.acceptedSessionsMu.Lock()
+	a.acceptedSessions[transfer.sessionPath]++
+	a.acceptedSessionsMu.Unlock()
+
+	return true, nil
+}
+
+func (a *obexAgent) receiveProgress(transfer *transferObj) {
+	transfer.InitSignalExt(a.sigLoop, true)
+
+	fileSize, err := transfer.Size().Get(0)
+	if err != nil {
+		logger.Error("failed to get file size:", err)
+	}
+
+	var notifyMu sync.Mutex
+	isThisTransferCanceled := false
+	sessionPath := transfer.sessionPath
+
+	curHandler, err := a.notify.ConnectActionInvoked(func(id uint32, actionKey string) {
+		notifyMu.Lock()
+		targetID := a.notifyID
+		notifyMu.Unlock()
+
+		if targetID != id || actionKey != "cancel" {
+			return
+		}
+
+		notifyMu.Lock()
+		isThisTransferCanceled = true
+		notifyMu.Unlock()
+
+		a.b.setPropTransportable(true)
+		if err = transfer.Cancel(0); err != nil {
+			logger.Warning("failed to cancel transfer via D-Bus:", err)
+		}
+	})
+	if err != nil {
+		logger.Warning("connect action invoked failed:", err)
+	}
+
+	err = transfer.Status().ConnectChanged(func(hasValue bool, value string) {
+		if !hasValue {
+			return
+		}
+
+		if value != transferStatusComplete && value != transferStatusError {
+			return
+		}
+		a.b.setPropTransportable(true)
+		// 手机会在一个传送完成之后再开始下一个传送，所以 transfer path 会一样
+		transfer.RemoveAllHandlers()
+		a.notify.RemoveHandler(curHandler)
+
+		notifyMu.Lock()
+		canceled := isThisTransferCanceled
+		currentID := a.notifyID
+		notifyMu.Unlock()
+
+		if value == transferStatusComplete {
+			// 如果获取不到FileName时，文件应该在~/.cache/obexd下
+			oriFilepath, err := transfer.Filename().Get(0)
+			if err != nil || oriFilepath == "" {
+				oriFilepath = filepath.Join(dutils.GetCacheDir(), "obexd", transfer.tempFileName)
+			}
+			// 传送完成，移动到下载目录
+			realFileName := moveTempFile(oriFilepath, filepath.Join(receiveBaseDir, transfer.oriFilename))
+
+			newID := a.notifyProgress(a.notify, a.notifyID, realFileName, transfer.deviceName, 100)
+
+			notifyMu.Lock()
+			a.notifyID = newID
+			notifyMu.Unlock()
+		} else {
+			newID := a.notifyFailed(a.notify, currentID, canceled)
+
+			notifyMu.Lock()
+			a.notifyID = newID
+			notifyMu.Unlock()
+		}
+
+		a.receiveChMu.Lock()
+		select {
+		case a.receiveCh <- struct{}{}:
+		default:
+		}
+		a.receiveChMu.Unlock()
+
+		// 避免下个传输还没开始就被清空，导致需要重新询问，故加上一秒的延迟
+		//TODO: maybe we can monitor the object 'session' being removed and update a.acceptedSessions?
+		time.AfterFunc(time.Second, func() {
+			a.acceptedSessionsMu.Lock()
+			defer a.acceptedSessionsMu.Unlock()
+			a.acceptedSessions[sessionPath]--
+			if a.acceptedSessions[sessionPath] <= 0 {
+				delete(a.acceptedSessions, sessionPath)
+			}
+		})
+	})
+	if err != nil {
+		logger.Warning("connect status changed failed:", err)
+	}
+
+	var progress uint64 = math.MaxUint64
+	err = transfer.Transferred().ConnectChanged(func(hasValue bool, value uint64) {
+		if !hasValue || value == 0 {
+			return
+		}
+
+		if fileSize == 0 {
+			logger.Warning("transferred file size is zero, cannot calculate progress")
+			return
+		}
+
+		var status string
+		status, err = transfer.Status().Get(0)
+		if err != nil {
+			logger.Warning(err)
+			return
+		}
+
+		if status == transferStatusComplete || status == transferStatusError {
+			return
+		}
+
+		newProgress := value * 100 / fileSize
+		if progress == newProgress || value >= fileSize {
+			return
+		}
+
+		progress = newProgress
+		logger.Infof("transferPath: %q, progress: %d", transfer.Path_(), progress)
+
+		notifyMu.Lock()
+		a.notifyID = a.notifyProgress(a.notify, a.notifyID, transfer.oriFilename, transfer.deviceName, progress)
+		notifyMu.Unlock()
+	})
+	if err != nil {
+		logger.Warning("connect transferred changed failed:", err)
+	}
+}
+
+func moveTempFile(src, dest string) string {
+	count := 0
+	suffix := filepath.Ext(dest)
+	fileName := strings.TrimSuffix(dest, suffix)
+	for {
+		if dutils.IsFileExist(dest) {
+			count++
+			dest = fmt.Sprintf("%v(%v)%v", fileName, count, suffix)
+		} else {
+			err := dutils.MoveFile(src, dest)
+			if err != nil {
+				fmt.Println("failed to move file:", err)
+			}
+			break
+		}
+	}
+	return dest
+}
+
+// 获取随机字母+数字组合字符串
+func getRandstring(length int) string {
+	if length < 1 {
+		return ""
+	}
+	char := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	charArr := strings.Split(char, "")
+	charlen := len(charArr)
+	ran := rand.New(rand.NewSource(time.Now().Unix()))
+	var rchar = ""
+	for i := 1; i <= length; i++ {
+		rchar = rchar + charArr[ran.Intn(charlen)]
+	}
+	return rchar
+}
+
+// 随机文件名
+func randFileName(fileName string) string {
+	randStr := getRandstring(16)
+	return strings.Join([]string{
+		randStr,
+		fileName,
+	}, "_")
+}
+
+// notifyProgress 发送文件传输进度通知
+func (a *obexAgent) notifyProgress(notify notifications.Notifications, replaceID uint32, filename string, device string, progress uint64) uint32 {
+	var actions []string
+	var notifyID uint32
+	var err error
+	if progress != 100 {
+		actions = []string{"cancel", gettext.Tr("Cancel")}
+		hints := map[string]dbus.Variant{
+			"suppress-sound":              dbus.MakeVariant(true),
+			"x-deepin-ShowInNotifyCenter": dbus.MakeVariant(false),
+		}
+
+		notifyID, err = notify.Notify(0,
+			gettext.Tr("dde-control-center"),
+			replaceID,
+			notifyIconBluetoothConnected,
+			fmt.Sprintf("%d%%", progress),
+			fmt.Sprintf(gettext.Tr("Receiving %[1]q"), filename),
+			actions,
+			hints,
+			receiveFileNeverTimeout)
+		if err != nil {
+			logger.Warning("failed to send notify:", err)
+		}
+	} else {
+		notify.CloseNotification(0, replaceID)
+		actions = []string{"_view", gettext.Tr("View")}
+		hints := map[string]dbus.Variant{"x-deepin-action-_view": dbus.MakeVariant("dde-file-manager,--show-item," + filename)}
+		notifyID, err = notify.Notify(0,
+			gettext.Tr("dde-control-center"),
+			0,
+			notifyIconBluetoothConnected,
+			fmt.Sprintf(gettext.Tr("You have received files from %q successfully"), device),
+			gettext.Tr("Done"),
+			actions,
+			hints,
+			receiveFileNotifyTimeout)
+		if err != nil {
+			logger.Warning("failed to send notify:", err)
+		}
+	}
+
+	return notifyID
+}
+
+// notifyFailed 发送文件传输失败通知
+func (a *obexAgent) notifyFailed(notify notifications.Notifications, replaceID uint32, isCancel bool) uint32 {
+	var body string
+	summary := gettext.Tr("Stop Receiving Files")
+	if isCancel {
+		body = gettext.Tr("You have cancelled the file transfer")
+	} else {
+		body = gettext.Tr("Bluetooth connection failed")
+	}
+
+	notify.CloseNotification(0, replaceID)
+	notifyID, err := notify.Notify(0,
+		gettext.Tr("dde-control-center"),
+		0,
+		notifyIconBluetoothConnectFailed,
+		summary,
+		body,
+		nil,
+		nil,
+		receiveFileNotifyTimeout)
+	if err != nil {
+		logger.Warning("failed to send notify:", err)
+	}
+
+	return notifyID
+}
+
+// Cancel 用于在客户端取消发送文件时取消文件传输请求
+func (a *obexAgent) Cancel() *dbus.Error {
+	logger.Info("dbus call obexAgent Cancel")
+
+	a.cancelChMu.Lock()
+	defer a.cancelChMu.Unlock()
+
+	if a.cancelCh == nil {
+		err := errors.New("no such process")
+		logger.Warning(err)
+		return dbusutil.ToError(err)
+	}
+
+	select {
+	case a.cancelCh <- CancelReasonManual:
+	default:
+		logger.Info("Cancel signal already pending")
+	}
+
+	return nil
+}
+
+// requestReceive 询问用户是否接收文件
+func (a *obexAgent) requestReceive(deviceName, filename string) (bool, error) {
+	notify := notifications.NewNotifications(a.service.Conn())
+	notify.InitSignalExt(a.sigLoop, true)
+
+	actions := []string{"decline", gettext.Tr("Decline"), "receive", gettext.Tr("Receive")}
+	hints := map[string]dbus.Variant{"x-deepin-ShowInNotifyCenter": dbus.MakeVariant(false)}
+	notifyID, err := notify.Notify(0,
+		gettext.Tr("dde-control-center"),
+		0,
+		notifyIconBluetoothConnected,
+		gettext.Tr("Bluetooth File Transfer"),
+		fmt.Sprintf(gettext.Tr("%q wants to send files to you. Receive?"), deviceName),
+		actions,
+		hints,
+		receiveFileNotifyTimeout)
+	if err != nil {
+		logger.Warning("failed to send notify:", err)
+		return false, err
+	}
+
+	var requestNotifyCh = make(chan bool, 1)
+	_, err = notify.ConnectActionInvoked(func(id uint32, actionKey string) {
+		if notifyID != id {
+			return
+		}
+
+		requestNotifyCh <- actionKey == "receive"
+	})
+	if err != nil {
+		logger.Warning("ConnectActionInvoked failed:", err)
+		return false, dbusutil.ToError(err)
+	}
+
+	a.cancelChMu.Lock()
+	a.cancelCh = make(chan cancelReason, 1)
+	a.cancelChMu.Unlock()
+	_, err = notify.ConnectNotificationClosed(func(id uint32, reason uint32) {
+		if notifyID != id {
+			return
+		}
+
+		a.cancelChMu.Lock()
+		defer a.cancelChMu.Unlock()
+
+		if a.cancelCh == nil {
+			return
+		}
+
+		select {
+		case a.cancelCh <- cancelReason(reason):
+		default:
+		}
+	})
+	if err != nil {
+		logger.Warning("ConnectNotificationClosed failed:", err)
+		return false, dbusutil.ToError(err)
+	}
+
+	var result = false
+	select {
+	case result = <-requestNotifyCh:
+		if !result {
+			logger.Info("user decline file receive request")
+			a.b.setPropTransportable(true)
+		}
+	case reason := <-a.cancelCh:
+		logger.Info("receive file request canceled:", reason.String())
+		a.b.setPropTransportable(true)
+
+		notify.CloseNotification(0, notifyID)
+		if reason == CancelReasonExpired {
+			a.notifyReceiveFileTimeout(notify, 0, filename)
+		}
+	}
+
+	a.cancelChMu.Lock()
+	a.cancelCh = nil
+	a.cancelChMu.Unlock()
+
+	notify.RemoveAllHandlers()
+
+	return result, nil
+}
+
+// notifyReceiveFileTimeout 接收文件请求超时通知
+func (a *obexAgent) notifyReceiveFileTimeout(notify notifications.Notifications, replaceID uint32, filename string) {
+	_, err := notify.Notify(0,
+		gettext.Tr("dde-control-center"),
+		replaceID,
+		notifyIconBluetoothConnectFailed,
+		gettext.Tr("Stop Receiving Files"),
+		fmt.Sprintf(gettext.Tr("Receiving %q timed out"), filename),
+		nil,
+		nil,
+		receiveFileNotifyTimeout)
+	if err != nil {
+		logger.Warning("failed to send notify:", err)
+	}
+}
