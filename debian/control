@@ -1,7 +1,7 @@
-Source: dde-daemon
+Source: velora-daemon
 Section: admin
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.com>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  dde-api-dev (>> 3.17.1+),
  debhelper-compat (= 11),
@@ -53,8 +53,8 @@ Build-Depends:
  libxtst-dev,
  libddcutil-dev,
  python3,
-Standards-Version: 4.5.1
-Homepage: http://www.deepin.org
+Standards-Version: 4.5.0
+Homepage: https://github.com/LingmoOS/velora-daemon
 
 Package: dde-daemon
 Architecture: any
