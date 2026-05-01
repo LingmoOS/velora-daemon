@@ -9,7 +9,7 @@ license=('GPL3')
 depends=('velora-desktop-schemas-git' 'ddcutil' 'deepin-api-git' 'gvfs' 'iso-codes' 'lsb-release'
          'mobile-broadband-provider-info' 'deepin-polkit-agent-git'
          'deepin-polkit-agent-ext-gnomekeyring-git' 'udisks2' 'upower'
-         'libxkbfile' 'accountsservice' 'deepin-desktop-base-git' 'bamf' 'pulseaudio'
+         'libxkbfile' 'accountsservice' 'lingmo-desktop-base-git' 'bamf' 'pulseaudio'
          'org.freedesktop.secrets' 'noto-fonts' 'imwheel' 'ddcutil')
 makedepends=('golang-github-linuxdeepin-go-dbus-factory-git' 'golang-deepin-gir-git' 'golang-deepin-lib-git'
              'deepin-api-git' 'golang-github-nfnt-resize' 'sqlite' 'deepin-gettext-tools-git'

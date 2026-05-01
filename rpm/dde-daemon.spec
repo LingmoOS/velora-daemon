@@ -52,7 +52,7 @@ BuildRequires:  go-gir-generator
 BuildRequires:  dde-api-devel
 
 Requires:       bluez-libs
-Requires:       deepin-desktop-base
+Requires:       lingmo-desktop-base
 Requires:       velora-desktop-schemas
 Requires:       dde-session-ui
 Requires:       dde-polkit-agent
