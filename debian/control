@@ -5,7 +5,7 @@ Maintainer: Deepin Packages Builder <packages@deepin.com>
 Build-Depends:
  dde-api-dev (>> 3.17.1+),
  debhelper-compat (= 11),
- deepin-desktop-schemas,
+ velora-desktop-schemas,
  deepin-gettext-tools,
  golang-github-linuxdeepin-go-lib-dev(>> 5.1.0+),
  golang-gir-gio-2.0-dev (>> 1.2.0+),
@@ -64,7 +64,7 @@ Depends:
  dbus,
  dde-api (>> 3.17.1+),
  dde-polkit-agent,
- deepin-desktop-schemas (>> 5.1.2+),
+ velora-desktop-schemas (>> 5.1.2+),
  deepin-installer-timezones,
  deepin-sound-theme,
  dmidecode,

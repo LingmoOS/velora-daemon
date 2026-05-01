@@ -53,7 +53,7 @@ BuildRequires:  dde-api-devel
 
 Requires:       bluez-libs
 Requires:       deepin-desktop-base
-Requires:       deepin-desktop-schemas
+Requires:       velora-desktop-schemas
 Requires:       dde-session-ui
 Requires:       dde-polkit-agent
 Requires:       rfkill
