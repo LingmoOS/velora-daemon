@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"os"
 	"os/exec"
 	"regexp"
 	"strconv"
@@ -77,6 +78,7 @@ type Manager struct {
 	DMIInfo         dmi.DMI
 	DisplayDriver   string
 	VideoDriver     string
+	BuildVersion    string
 }
 
 func formatFileSize(fileSize uint64) (size string) {
@@ -109,6 +111,15 @@ func NewManager(service *dbusutil.Service) *Manager {
 	} else {
 		m.DMIInfo = *v
 	}
+
+	// 从 /etc/lingmo-build-version 读取内部版本号
+	if data, err := os.ReadFile("/etc/lingmo-build-version"); err == nil {
+		m.BuildVersion = strings.TrimSpace(string(data))
+		m.setPropBuildVersion(m.BuildVersion)
+	} else {
+		logger.Debug("failed to read /etc/lingmo-build-version:", err)
+	}
+
 	return m
 }
 

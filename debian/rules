@@ -8,7 +8,10 @@ export GO111MODULE=off
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 export CFLAGS = -W -Wall -fPIC -fstack-protector-all -z relro -z noexecstack -z now -pie
 # Deepin/Uos系统，编译scheduler（移除noscheduler标签）
-export BUILD_TAGS = 
+export BUILD_TAGS =
+# Lingmo OS 内部构建版本（格式：YY[R|b|a]NN，如 26R01/26b02/26a03）
+# 注意：此值应与 base-files/debian/rules 中的 BUILD_VER 保持一致
+export BUILD_VERSION ?= 26a01
 
 SYSTYPE=Desktop
 SYSTYPE=$(shell cat /etc/deepin-version | grep Type= | awk -F'=' '{print $$2}')
@@ -32,6 +35,8 @@ override_dh_auto_install:
 	dh_auto_install
 	dh_installsysusers  dde-daemon.sysusers
 	dh_installtmpfiles dde-daemon.tmpfiles
+	# 生成 /etc/lingmo-build-version（从模板替换 BUILD_VERSION）
+	sed 's|@BUILD_VERSION@|$(BUILD_VERSION)|g' misc/lingmo-build-version.in > debian/dde-daemon/etc/lingmo-build-version
 
 ifeq ($(DEB_BUILD_ARCH), mipsel)
 override_dh_auto_configure:

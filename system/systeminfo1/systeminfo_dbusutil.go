@@ -81,3 +81,16 @@ func (v *Manager) setPropVideoDriver(value string) (changed bool) {
 func (v *Manager) emitPropChangedVideoDriver(value string) error {
 	return v.service.EmitPropertyChanged(v, "VideoDriver", value)
 }
+
+func (v *Manager) setPropBuildVersion(value string) (changed bool) {
+	if v.BuildVersion != value {
+		v.BuildVersion = value
+		v.emitPropChangedBuildVersion(value)
+		return true
+	}
+	return false
+}
+
+func (v *Manager) emitPropChangedBuildVersion(value string) error {
+	return v.service.EmitPropertyChanged(v, "BuildVersion", value)
+}

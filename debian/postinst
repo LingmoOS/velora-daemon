@@ -93,6 +93,11 @@ case "$1" in
     linkJavaFallbackFont
     prepareGfxmodeDetect
     setupLightdmDeepinPermissions
+
+    # 确保 /etc/lingmo-build-version 存在（由 dpkg 打包时写入）
+    if [ ! -f /etc/lingmo-build-version ]; then
+        echo "" > /etc/lingmo-build-version
+    fi
     ;;
     triggered)
     linkJavaFallbackFont
