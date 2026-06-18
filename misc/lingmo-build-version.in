@@ -1,5 +1,1 @@
-# Lingmo OS Internal Build Version
-# Format: YY[R|b|a]NN (e.g., 26R01, 26b02, 26a03)
-#   R = Release, b = Beta, a = Alpha
-# This file is generated during package build.
 @BUILD_VERSION@
