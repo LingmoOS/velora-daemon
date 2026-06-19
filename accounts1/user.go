@@ -72,15 +72,15 @@ const (
 )
 
 const (
-	deepinThemePath         = "/usr/share/deepin-themes/"
-	defaultTheme            = "nirvana"
+	deepinThemePath         = "/usr/share/lingmo-themes/"
+	defaultTheme            = "lingmo"
 	themeFile               = "index.theme"
 	themeGroupDefault       = "DefaultTheme"
 	themeGroupDark          = "DarkTheme"
 	configKeyLockBackground = "LockBackground"
 
-	defaultLockBackgroundFileName = "default_lock_background.jpg"
-	defaultBackgroundFileName     = "default_background.jpg"
+	defaultLockBackgroundFileName = "default.jpg"
+	defaultBackgroundFileName     = "default.jpg"
 )
 
 func getThemeLockBackground(theme string) string {

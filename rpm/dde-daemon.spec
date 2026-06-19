@@ -16,7 +16,7 @@ Release:        1
 Summary:        Daemon handling the DDE session settings
 License:        GPLv3
 URL:            http://shuttle.corp.deepin.com/cache/tasks/18802/unstable-amd64/
-Source0:        %{name}-%{version}.orig.tar.xz
+Source0:        dde-daemon-%{version}.tar.gz
 
 BuildRequires:  python3
 BuildRequires:  gocode
