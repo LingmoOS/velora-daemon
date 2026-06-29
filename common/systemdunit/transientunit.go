@@ -7,6 +7,7 @@ package systemdunit
 import (
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/godbus/dbus/v5"
 	systemd1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.systemd1"
@@ -81,7 +82,7 @@ func (t *TransientUnit) WaitforFinish(sigLoop *dbusutil.SignalLoop) bool {
 		return false
 	}
 	t.unit.InitSignalExt(sigLoop, true)
-	var result = make(chan string, 1) // buffered channel to prevent blocking
+	var result = make(chan string, 1)
 	t.unit.ConnectPropertiesChanged(func(interfaceName string, changedProperties map[string]dbus.Variant, invalidatedProperties []string) {
 		_, ok := changedProperties["ActiveState"]
 		if ok {
@@ -89,7 +90,6 @@ func (t *TransientUnit) WaitforFinish(sigLoop *dbusutil.SignalLoop) bool {
 			select {
 			case result <- val:
 			default:
-				// channel is full or closed, skip this update
 			}
 		}
 	})
@@ -97,12 +97,17 @@ func (t *TransientUnit) WaitforFinish(sigLoop *dbusutil.SignalLoop) bool {
 		t.unit.RemoveAllHandlers()
 		close(result)
 	}()
+	timeout := time.After(1 * time.Second)
 	for {
-		res := <-result
-		if strings.Contains(res, "failed") {
+		select {
+		case res := <-result:
+			if strings.Contains(res, "failed") {
+				return false
+			} else if strings.Contains(res, "inactive") {
+				return true
+			}
+		case <-timeout:
 			return false
-		} else if strings.Contains(res, "inactive") {
-			return true
 		}
 	}
 }
