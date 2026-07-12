@@ -1,4 +1,4 @@
-velora-daemon (6.1.92.lingmo.1) unstable; urgency=medium
+lingmo-daemon (6.1.92.lingmo.1) unstable; urgency=medium
 
   * Lingmo namespace migration.
 
