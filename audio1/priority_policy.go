@@ -7,7 +7,7 @@ package audio
 import (
 	"strings"
 
-	"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 )
 
 const (

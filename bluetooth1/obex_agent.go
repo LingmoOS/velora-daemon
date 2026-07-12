@@ -15,16 +15,16 @@ import (
 	"sync"
 	"time"
 
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 
 	"github.com/godbus/dbus/v5"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	obex "github.com/linuxdeepin/go-dbus-factory/system/org.bluez.obex"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/xdg/userdir"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	obex "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.bluez.obex"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/userdir"
 
-	sessionwatcher "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionwatcher1"
+	sessionwatcher "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionwatcher1"
 )
 
 const (

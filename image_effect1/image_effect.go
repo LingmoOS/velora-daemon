@@ -15,15 +15,15 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 	"golang.org/x/xerrors"
 )
 
 //go:generate dbusutil-gen em -type ImageEffect
 
 const (
-	dbusServiceName = "org.deepin.dde.ImageEffect1"
+	dbusServiceName = "org.lingmo.ImageEffect1"
 	dbusInterface   = dbusServiceName
 	dbusPath        = "/org/deepin/dde/ImageEffect1"
 

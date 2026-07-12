@@ -12,9 +12,9 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/soundutils"
-	. "github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/velora-api/soundutils"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 	"github.com/linuxdeepin/go-x11-client/ext/dpms"
 )
 
@@ -210,7 +210,7 @@ func (m *Manager) setDPMSModeOff() {
 }
 
 const (
-	lockFrontServiceName = "org.deepin.dde.LockFront1"
+	lockFrontServiceName = "org.lingmo.LockFront1"
 	lockFrontIfc         = lockFrontServiceName
 	lockFrontObjPath     = "/org/deepin/dde/LockFront1"
 )
@@ -527,7 +527,7 @@ func playSound(name string) {
 }
 
 const (
-	deepinScreensaverDBusServiceName = "com.deepin.ScreenSaver"
+	deepinScreensaverDBusServiceName = "com.lingmo.ScreenSaver"
 	deepinScreensaverDBusPath        = "/com/deepin/ScreenSaver"
 	deepinScreensaverDBusInterface   = deepinScreensaverDBusServiceName
 )
@@ -713,7 +713,7 @@ func (m *Manager) getDpmsModeByKwin() (int32, error) {
 	var dpmsMode int32
 	for i := 0; i < len(list); i++ {
 		v := list[i].Value().(string)
-		sessionObj := m.sessionSigLoop.Conn().Object("org.deepin.dde.KWayland1", dbus.ObjectPath(v))
+		sessionObj := m.sessionSigLoop.Conn().Object("org.lingmo.KWayland1", dbus.ObjectPath(v))
 		err = sessionObj.Call("org.deepin.dde.KWayland1.Dpms.getDpmsMode", 0).Store(&dpmsMode)
 		if err != nil {
 			logger.Warning(err)
@@ -733,7 +733,7 @@ func (m *Manager) setDpmsModeByKwin(mode int32) error {
 
 	for i := 0; i < len(list); i++ {
 		v := list[i].Value().(string)
-		sessionObj := m.sessionSigLoop.Conn().Object("org.deepin.dde.KWayland1", dbus.ObjectPath(v))
+		sessionObj := m.sessionSigLoop.Conn().Object("org.lingmo.KWayland1", dbus.ObjectPath(v))
 		err = sessionObj.Call("org.deepin.dde.KWayland1.Dpms.setDpmsMode", 0, int32(mode)).Err
 		if err != nil {
 			logger.Warning(err)

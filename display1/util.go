@@ -17,9 +17,9 @@ import (
 	"strings"
 
 	"github.com/godbus/dbus/v5"
-	hostname1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.hostname1"
-	"github.com/linuxdeepin/go-gir/gudev-1.0"
-	"github.com/linuxdeepin/go-lib/utils"
+	hostname1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.hostname1"
+	"github.com/LingmoOS/go-gir-generator/gudev-1.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 )
 

@@ -10,10 +10,10 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	ControlCenter "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.controlcenter1"
-	kwayland "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.kwayland1"
-	lastore "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.lastore1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	ControlCenter "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.controlcenter1"
+	kwayland "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.kwayland1"
+	lastore "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.lastore1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (

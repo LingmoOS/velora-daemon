@@ -15,21 +15,21 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	btcommon "github.com/linuxdeepin/dde-daemon/common/bluetooth"
-	audio "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.audio1"
-	mpris2 "github.com/linuxdeepin/go-dbus-factory/session/org.mpris.mediaplayer2"
-	obex "github.com/linuxdeepin/go-dbus-factory/system/org.bluez.obex"
-	airplanemode "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.airplanemode1"
-	sysbt "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.bluetooth1"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	gio "github.com/linuxdeepin/go-gir/gio-2.0"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/gsprop"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
+	btcommon "github.com/LingmoOS/velora-daemon/common/bluetooth"
+	audio "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.audio1"
+	mpris2 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.mpris.mediaplayer2"
+	obex "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.bluez.obex"
+	airplanemode "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.airplanemode1"
+	sysbt "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.bluetooth1"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	gio "github.com/LingmoOS/go-gir-generator/gio-2.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/gsprop"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.Bluetooth1"
+	dbusServiceName = "org.lingmo.Bluetooth1"
 	dbusPath        = "/org/deepin/dde/Bluetooth1"
 	dbusInterface   = dbusServiceName
 	configManagerId = "org.desktopspec.ConfigManager"

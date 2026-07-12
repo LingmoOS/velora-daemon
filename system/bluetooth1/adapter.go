@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	bluez "github.com/linuxdeepin/go-dbus-factory/system/org.bluez"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
+	bluez "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.bluez"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
 )
 
 type adapter struct {

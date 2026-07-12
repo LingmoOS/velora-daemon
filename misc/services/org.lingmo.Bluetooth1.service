@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.lingmo.Bluetooth1
+Exec=/usr/lib/deepin-daemon/dde-session-daemon
+SystemdService=org.lingmo.session.Daemon1.service

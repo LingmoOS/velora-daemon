@@ -13,10 +13,10 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	sessionwatcher "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionwatcher1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/keyfile"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	sessionwatcher "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionwatcher1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -27,7 +27,7 @@ type BaseCollector interface {
 }
 
 const (
-	dbusServiceName = "org.deepin.dde.EventLog1"
+	dbusServiceName = "org.lingmo.EventLog1"
 	dbusPath        = "/org/deepin/dde/EventLog1"
 	dbusInterface   = dbusServiceName
 )

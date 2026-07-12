@@ -9,8 +9,8 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	soundthemeplayer "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.soundthemeplayer1"
-	"github.com/linuxdeepin/go-lib/asound"
+	soundthemeplayer "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.soundthemeplayer1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/asound"
 )
 
 func (a *Audio) saveConfig() {

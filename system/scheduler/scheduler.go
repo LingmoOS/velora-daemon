@@ -11,7 +11,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/linuxdeepin/go-lib/procfs"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/procfs"
 )
 
 // 遍历所有进程, 设置优先级

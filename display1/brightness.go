@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/linuxdeepin/dde-daemon/display1/brightness"
+	"github.com/LingmoOS/velora-daemon/display1/brightness"
 )
 
 type InvalidOutputNameError struct {

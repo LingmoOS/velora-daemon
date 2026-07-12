@@ -11,11 +11,11 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	btcommon "github.com/linuxdeepin/dde-daemon/common/bluetooth"
-	bluez "github.com/linuxdeepin/go-dbus-factory/system/org.bluez"
-	sysbtagent "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.bluetooth1.agent"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	btcommon "github.com/LingmoOS/velora-daemon/common/bluetooth"
+	bluez "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.bluez"
+	sysbtagent "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.bluetooth1.agent"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (

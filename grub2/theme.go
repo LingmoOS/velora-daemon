@@ -7,7 +7,7 @@ package grub2
 import (
 	"sync"
 
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 // Theme is a dbus object which provide properties and methods to

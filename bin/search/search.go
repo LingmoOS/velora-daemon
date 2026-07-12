@@ -10,7 +10,7 @@ import (
 	"path"
 	"regexp"
 
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 type dataInfo struct {

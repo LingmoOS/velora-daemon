@@ -5,7 +5,7 @@
 package shortcuts
 
 import (
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
 )
 
 type ShortcutObject struct {

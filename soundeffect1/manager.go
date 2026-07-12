@@ -9,11 +9,11 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/soundutils"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	soundthemeplayer "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.soundthemeplayer1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-api/soundutils"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	soundthemeplayer "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.soundthemeplayer1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 //go:generate dbusutil-gen em -type Manager
@@ -27,7 +27,7 @@ const (
 	dconfigSoundEffectId = "org.deepin.dde.daemon.soundeffect"
 	dconfigKeyEnabled    = "enabled"
 
-	DBusServiceName        = "org.deepin.dde.SoundEffect1"
+	DBusServiceName        = "org.lingmo.SoundEffect1"
 	dbusPath               = "/org/deepin/dde/SoundEffect1"
 	dbusInterface          = DBusServiceName
 	allowPlaySoundMaxCount = 3

@@ -8,10 +8,10 @@ import (
 	"encoding/xml"
 	"os"
 
-	"github.com/linuxdeepin/dde-daemon/inputdevices1/iso639"
-	"github.com/linuxdeepin/go-lib/gettext"
-	lib_locale "github.com/linuxdeepin/go-lib/locale"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-daemon/inputdevices1/iso639"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	lib_locale "github.com/LingmoOS/golang-github-lingmo-go-lib/locale"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 const (

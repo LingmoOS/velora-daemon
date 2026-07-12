@@ -8,8 +8,8 @@ import (
 	"path"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/pinyin"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pinyin"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 func (*Manager) GetInterfaceName() string {

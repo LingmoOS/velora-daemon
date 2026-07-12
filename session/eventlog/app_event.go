@@ -15,8 +15,8 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	dock "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.daemon.dock1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	dock "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.daemon.dock1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 type TidTyp int
@@ -128,7 +128,7 @@ func (c *appEventCollector) Collect() error {
 		if !c.removeEntry(entryId) {
 			return
 		}
-		entryPath := dbus.ObjectPath(filepath.Join("/org/deepin/dde/daemon/Dock1/entries/", entryId))
+		entryPath := dbus.ObjectPath(filepath.Join("/org/lingmo/daemon/Dock1/entries/", entryId))
 		entryObj := getEntryMapObj(entryPath)
 		if entryObj != nil {
 			entryObj.RemoveAllHandlers()

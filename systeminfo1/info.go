@@ -11,18 +11,18 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/cpuinfo"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	ConfigManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	systeminfo "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.systeminfo1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/common/cpuinfo"
+	"github.com/LingmoOS/velora-daemon/loader"
+	ConfigManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	systeminfo "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.systeminfo1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 //go:generate dbusutil-gen em -type SystemInfo
 
 const (
-	dbusServiceName         = "org.deepin.dde.SystemInfo1"
+	dbusServiceName         = "org.lingmo.SystemInfo1"
 	dbusPath                = "/org/deepin/dde/SystemInfo1"
 	dbusInterface           = dbusServiceName
 	dsettingsAppID          = "org.deepin.dde.daemon"

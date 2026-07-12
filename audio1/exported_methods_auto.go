@@ -3,7 +3,7 @@
 package audio
 
 import (
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 func (v *Audio) GetExportedMethods() dbusutil.ExportedMethods {

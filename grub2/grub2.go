@@ -17,12 +17,12 @@ import (
 	"unicode"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/grub_common"
-	accounts "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.accounts1"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/grub_common"
+	accounts "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.accounts1"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const grubScriptFile = "/boot/grub/grub.cfg"

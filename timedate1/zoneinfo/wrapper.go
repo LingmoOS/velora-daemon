@@ -15,7 +15,7 @@ import (
 
 	"strings"
 
-	. "github.com/linuxdeepin/go-lib/gettext"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 func getDSTTime(zone string, year int32) (int64, int64, bool) {

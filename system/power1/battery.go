@@ -11,9 +11,9 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/powersupply/battery"
-	gudev "github.com/linuxdeepin/go-gir/gudev-1.0"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-api/powersupply/battery"
+	gudev "github.com/LingmoOS/go-gir-generator/gudev-1.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 type Battery struct {

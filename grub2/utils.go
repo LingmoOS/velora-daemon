@@ -14,8 +14,8 @@ import (
 	"strings"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/grub_common"
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
+	"github.com/LingmoOS/velora-daemon/grub_common"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
 )
 
 func quoteString(str string) string {

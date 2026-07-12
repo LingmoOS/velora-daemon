@@ -14,8 +14,8 @@ import (
 	"fmt"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/multierr"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/multierr"
 )
 
 type Message struct {

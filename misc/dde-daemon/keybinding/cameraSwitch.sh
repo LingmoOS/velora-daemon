@@ -8,6 +8,6 @@ then
 	killall deepin-camera
 else
 	echo "open deepin-camera"
-	dbus-send --session --print-reply --dest=com.deepin.SessionManager /com/deepin/StartManager com.deepin.StartManager.Launch string:/usr/share/applications/deepin-camera.desktop
+	dbus-send --session --print-reply --dest=com.lingmo.SessionManager /com/lingmo/StartManager com.lingmo.StartManager.Launch string:/usr/share/applications/deepin-camera.desktop
 fi
 

@@ -15,7 +15,7 @@ After=treeland-xwayland.service
 
 [Service]
 Type=dbus
-BusName=org.deepin.dde.Daemon1
+BusName=org.lingmo.Daemon1
 ExecStart=/usr/lib/deepin-daemon/dde-session-daemon
 Slice=app.slice
 Restart=on-failure

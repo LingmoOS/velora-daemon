@@ -13,8 +13,8 @@ import (
 	"strings"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 )
 
 const clearData = "\033\143\n"

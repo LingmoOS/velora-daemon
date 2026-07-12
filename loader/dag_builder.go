@@ -5,8 +5,8 @@
 package loader
 
 import (
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/dde-daemon/graph"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/velora-daemon/graph"
 )
 
 type DAGBuilder struct {

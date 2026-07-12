@@ -14,13 +14,13 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/cpuinfo"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/common/cpuinfo"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 const (
-	dbusServiceName     = "org.deepin.dde.Display1"
+	dbusServiceName     = "org.lingmo.Display1"
 	dbusInterfaceName   = dbusServiceName
 	dbusPath            = "/org/deepin/dde/Display1"
 	configFilePath      = "/var/lib/dde-daemon/display/config.json"

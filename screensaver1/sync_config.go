@@ -7,12 +7,12 @@ package screensaver
 import (
 	"encoding/json"
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-gir/gio-2.0"
+	"github.com/LingmoOS/go-gir-generator/gio-2.0"
 )
 
 const (
 	dScreenSaverPath        = "/org/deepin/dde/ScreenSaver1"
-	dScreenSaverServiceName = "org.deepin.dde.ScreenSaver1"
+	dScreenSaverServiceName = "org.lingmo.ScreenSaver1"
 
 	gsSchemaPower = "com.deepin.dde.power"
 
@@ -21,7 +21,7 @@ const (
 	keybatteryScreenSaverTimeout   = "batteryScreenSaverTimeout"
 	keyLinePowerScreenSaverTimeout = "linePowerScreenSaverTimeout"
 
-	deepinScreensaverDBusServiceName   = "com.deepin.ScreenSaver"
+	deepinScreensaverDBusServiceName   = "com.lingmo.ScreenSaver"
 	deepinScreensaverDBusPath          = "/com/deepin/ScreenSaver"
 	deepinScreensaverDBusInterfaceName = deepinScreensaverDBusServiceName
 	dbusPropertyName                   = "org.freedesktop.DBus.Properties"

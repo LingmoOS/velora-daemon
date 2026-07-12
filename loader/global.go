@@ -7,8 +7,8 @@ package loader
 import (
 	"sync"
 
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 var loaderInitializer sync.Once

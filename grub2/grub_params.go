@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/linuxdeepin/dde-daemon/grub_common"
+	"github.com/LingmoOS/velora-daemon/grub_common"
 )
 
 const (

@@ -1,0 +1,14 @@
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/dde-authority
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/dde-greeter-setter
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/dde-lockservice
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/dde-session-daemon
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/dde-system-daemon
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/default-file-manager
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/default-terminal
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/desktop-toggle
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/grub2
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/langselector
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/search
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/soundeffect
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/theme-thumb-tool
+lingmo-daemon: unstripped-binary-or-object usr/lib/deepin-daemon/backlight_helper

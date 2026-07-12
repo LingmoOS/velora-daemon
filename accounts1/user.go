@@ -16,14 +16,14 @@ import (
 	"sync"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	authenticate "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.authenticate1"
-	uadp "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.uadp1"
-	glib "github.com/linuxdeepin/go-gir/glib-2.0"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/gdkpixbuf"
-	"github.com/linuxdeepin/go-lib/strv"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	authenticate "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.authenticate1"
+	uadp "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.uadp1"
+	glib "github.com/LingmoOS/go-gir-generator/glib-2.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gdkpixbuf"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (

@@ -5,9 +5,9 @@
 package screenedge
 
 import (
-	"github.com/linuxdeepin/dde-daemon/common/dsync"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-daemon/common/dsync"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 //go:generate dbusutil-gen em -type Manager
@@ -20,7 +20,7 @@ const (
 
 	dbusServiceName = "org.deepin.dde.Zone1"
 	dbusPath        = "/org/deepin/dde/Zone1"
-	dbusInterface   = "org.deepin.dde.Zone1"
+	dbusInterface   = "org.lingmo.Zone1"
 
 	wmDBusServiceName = "com.deepin.wm"
 )

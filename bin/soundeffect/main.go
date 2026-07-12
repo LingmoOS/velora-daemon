@@ -5,7 +5,7 @@
 package main
 
 import (
-	"github.com/linuxdeepin/dde-daemon/soundeffect1"
+	"github.com/LingmoOS/velora-daemon/soundeffect1"
 )
 
 func main() {

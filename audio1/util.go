@@ -14,10 +14,10 @@ import (
 	"unicode"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/soundutils"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.dbus"
-	mpris2 "github.com/linuxdeepin/go-dbus-factory/session/org.mpris.mediaplayer2"
-	//"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/velora-api/soundutils"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.dbus"
+	mpris2 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.mpris.mediaplayer2"
+	//"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 )
 
 func isVolumeValid(v float64) bool {

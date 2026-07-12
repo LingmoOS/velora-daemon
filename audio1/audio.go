@@ -15,16 +15,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	"github.com/linuxdeepin/dde-daemon/common/dsync"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	systemd1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.systemd1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	. "github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	"github.com/LingmoOS/velora-daemon/common/dsync"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	systemd1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.systemd1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 	"golang.org/x/xerrors"
 )
 
@@ -37,7 +37,7 @@ const (
 	dconfigDccAppid = "org.deepin.dde.control-center"
 	dconfigSoundId  = "org.deepin.dde.control-center.sound"
 
-	dbusServiceName = "org.deepin.dde.Audio1"
+	dbusServiceName = "org.lingmo.Audio1"
 	dbusPath        = "/org/deepin/dde/Audio1"
 	dbusInterface   = dbusServiceName
 

@@ -14,11 +14,11 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/sessionmsg"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/common/sessionmsg"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 type Manager struct {

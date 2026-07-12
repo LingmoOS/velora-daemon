@@ -8,8 +8,8 @@ import (
 	"encoding/json"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	soundthemeplayer "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.soundthemeplayer1"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	soundthemeplayer "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.soundthemeplayer1"
 )
 
 const (

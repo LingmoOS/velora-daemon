@@ -11,11 +11,11 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	"github.com/linuxdeepin/dde-daemon/common/dsync"
-	kwin "github.com/linuxdeepin/go-dbus-factory/session/org.kde.kwin"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/xdg/basedir"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	"github.com/LingmoOS/velora-daemon/common/dsync"
+	kwin "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.kde.kwin"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/basedir"
 )
 
 const (

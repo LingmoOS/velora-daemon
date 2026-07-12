@@ -6,8 +6,8 @@ package keyevent1
 
 import (
 	"github.com/godbus/dbus/v5"
-	inputdevices "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.inputdevices1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	inputdevices "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.inputdevices1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 //go:generate dbusutil-gen em -type Manager

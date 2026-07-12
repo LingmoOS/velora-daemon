@@ -11,13 +11,13 @@ import (
 	"sync"
 
 	"github.com/adrg/xdg"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (
 	// Under '/usr/share' or '/usr/local/share'
 	systemActionsFile   = "dde-daemon/keybinding/system_actions.json"
-	screenshotCmdPrefix = "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot."
+	screenshotCmdPrefix = "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot."
 )
 
 type SystemShortcut struct {
@@ -83,16 +83,16 @@ func getSystemActionCmd(id string) string {
 
 // key is id, value is commandline.
 var defaultSysActionCmdMap = map[string]string{
-	"launcher":      "dbus-send --print-reply --dest=org.deepin.dde.Launcher1 /org/deepin/dde/Launcher1 org.deepin.dde.Launcher1.Toggle",
+	"launcher":      "dbus-send --print-reply --dest=org.lingmo.Launcher1 /org/lingmo/Launcher1 org.lingmo.Launcher1.Toggle",
 	"terminal":      "/usr/lib/deepin-daemon/default-terminal",
 	"terminalQuake": "dde-am deepin-terminal quake-mode",
-	"lockScreen":    "originmap=$(setxkbmap -query | grep option | awk -F ' ' '{print $2}');/usr/bin/setxkbmap -option grab:break_actions&&/usr/bin/xdotool key XF86Ungrab&&dbus-send --print-reply --dest=org.deepin.dde.LockFront1 /org/deepin/dde/LockFront1 org.deepin.dde.LockFront1.Show&&/usr/bin/setxkbmap -option $originmap",
+	"lockScreen":    "originmap=$(setxkbmap -query | grep option | awk -F ' ' '{print $2}');/usr/bin/setxkbmap -option grab:break_actions&&/usr/bin/xdotool key XF86Ungrab&&dbus-send --print-reply --dest=org.lingmo.LockFront1 /org/lingmo/LockFront1 org.lingmo.LockFront1.Show&&/usr/bin/setxkbmap -option $originmap",
 	//wayland不能设置XF86Ungrab，否则会导致Bug-224309
-	"lockScreen-wayland":   "originmap=$(setxkbmap -query | grep option | awk -F ' ' '{print $2}');/usr/bin/setxkbmap -option grab:break_actions&&dbus-send --print-reply --dest=org.deepin.dde.LockFront1 /org/deepin/dde/LockFront1 org.deepin.dde.LockFront1.Show&&/usr/bin/setxkbmap -option $originmap",
-	"logout":               "dbus-send --print-reply --dest=org.deepin.dde.ShutdownFront1 /org/deepin/dde/ShutdownFront1 org.deepin.dde.ShutdownFront1.Show",
-	"deepinScreenRecorder": "dbus-send --print-reply --dest=com.deepin.ScreenRecorder /com/deepin/ScreenRecorder com.deepin.ScreenRecorder.stopRecord",
+	"lockScreen-wayland":   "originmap=$(setxkbmap -query | grep option | awk -F ' ' '{print $2}');/usr/bin/setxkbmap -option grab:break_actions&&dbus-send --print-reply --dest=org.lingmo.LockFront1 /org/lingmo/LockFront1 org.lingmo.LockFront1.Show&&/usr/bin/setxkbmap -option $originmap",
+	"logout":               "dbus-send --print-reply --dest=org.lingmo.ShutdownFront1 /org/lingmo/ShutdownFront1 org.lingmo.ShutdownFront1.Show",
+	"deepinScreenRecorder": "dbus-send --print-reply --dest=com.lingmo.ScreenRecorder /com/lingmo/ScreenRecorder com.lingmo.ScreenRecorder.stopRecord",
 	"systemMonitor":        "/usr/bin/deepin-system-monitor",
-	"colorPicker":          "dbus-send --print-reply --dest=com.deepin.Picker /com/deepin/Picker com.deepin.Picker.Show",
+	"colorPicker":          "dbus-send --print-reply --dest=com.lingmo.Picker /com/lingmo/Picker com.lingmo.Picker.Show",
 	// screenshot actions:
 	"screenshot":             screenshotCmdPrefix + "StartScreenshot",
 	"screenshotFullscreen":   screenshotCmdPrefix + "FullscreenScreenshot",
@@ -102,12 +102,12 @@ var defaultSysActionCmdMap = map[string]string{
 	"screenshotScroll":       screenshotCmdPrefix + "ScrollScreenshot",
 	"fileManager":            "/usr/lib/deepin-daemon/default-file-manager",
 	"disableTouchpad":        "dde-dconfig set -a  org.deepin.dde.daemon -r org.deepin.dde.daemon.touchpad -k touchpadEnabled -v false",
-	"wmSwitcher":             "dbus-send --type=method_call --dest=org.deepin.dde.WMSwitcher1 /org/deepin/dde/WMSwitcher1 org.deepin.dde.WMSwitcher1.RequestSwitchWM",
+	"wmSwitcher":             "dbus-send --type=method_call --dest=org.lingmo.WMSwitcher1 /org/lingmo/WMSwitcher1 org.lingmo.WMSwitcher1.RequestSwitchWM",
 	"turnOffScreen":          "sleep 0.5; xset dpms force off",
-	"notificationCenter":     "dbus-send --print-reply --dest=org.deepin.dde.Osd1 /org/deepin/dde/shell/notification/center org.deepin.dde.shell.notification.center.Toggle",
-	"clipboard":              "dbus-send --print-reply --dest=org.deepin.dde.Clipboard1 /org/deepin/dde/Clipboard1 org.deepin.dde.Clipboard1.Toggle; dbus-send --print-reply --dest=org.deepin.dde.Launcher1 /org/deepin/dde/Launcher1 org.deepin.dde.Launcher1.Hide",
+	"notificationCenter":     "dbus-send --print-reply --dest=org.lingmo.Osd1 /org/lingmo/shell/notification/center org.lingmo.shell.notification.center.Toggle",
+	"clipboard":              "dbus-send --print-reply --dest=org.lingmo.Clipboard1 /org/lingmo/Clipboard1 org.lingmo.Clipboard1.Toggle; dbus-send --print-reply --dest=org.lingmo.Launcher1 /org/lingmo/Launcher1 org.lingmo.Launcher1.Hide",
 	"globalSearch":           "/usr/libexec/dde-daemon/keybinding/shortcut-dde-grand-search.sh",
-	"switch-next-kbd-layout": "dbus-send --print-reply --dest=org.deepin.dde.Keybinding1 /org/deepin/dde/InputDevice1/Keyboard org.deepin.dde.InputDevice1.Keyboard.ToggleNextLayout",
+	"switch-next-kbd-layout": "dbus-send --print-reply --dest=org.lingmo.Keybinding1 /org/lingmo/InputDevice1/Keyboard org.lingmo.InputDevice1.Keyboard.ToggleNextLayout",
 	"switchMonitors":         "/usr/libexec/dde-daemon/keybinding/shortcut-dde-switch-monitors.sh",
 	// cmd
 	"calculator": "/usr/bin/deepin-calculator",

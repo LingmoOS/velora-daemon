@@ -4,7 +4,7 @@
 
 package screenedge
 
-import "github.com/linuxdeepin/dde-daemon/loader"
+import "github.com/LingmoOS/velora-daemon/loader"
 
 func init() {
 	loader.Register(NewDaemon(logger))

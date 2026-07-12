@@ -13,9 +13,9 @@ import (
 	"syscall"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/systemdunit"
+	"github.com/LingmoOS/velora-daemon/common/systemdunit"
 
-	"github.com/linuxdeepin/dde-daemon/grub_common"
+	"github.com/LingmoOS/velora-daemon/grub_common"
 )
 
 const (

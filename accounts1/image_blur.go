@@ -12,8 +12,8 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (

@@ -8,9 +8,9 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/dxinput"
-	"github.com/linuxdeepin/dde-api/dxinput/common"
-	dxutils "github.com/linuxdeepin/dde-api/dxinput/utils"
+	"github.com/LingmoOS/velora-api/dxinput"
+	"github.com/LingmoOS/velora-api/dxinput/common"
+	dxutils "github.com/LingmoOS/velora-api/dxinput/utils"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 )

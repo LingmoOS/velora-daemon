@@ -8,8 +8,8 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	DConfigManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	DConfigManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 type DConfig struct {

@@ -7,10 +7,10 @@ package bluetooth
 import (
 	"fmt"
 
-	btcommon "github.com/linuxdeepin/dde-daemon/common/bluetooth"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	btcommon "github.com/LingmoOS/velora-daemon/common/bluetooth"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 type daemon struct {

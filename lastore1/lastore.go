@@ -8,12 +8,12 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/dsync"
-	eventLog "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.EventLog1"
-	network "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.network1"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	lastore "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.lastore1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-daemon/common/dsync"
+	eventLog "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.EventLog1"
+	network "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.network1"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	lastore "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.lastore1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 //go:generate dbusutil-gen em -type Lastore

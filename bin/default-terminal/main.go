@@ -10,11 +10,11 @@ import (
 	"os/exec"
 
 	"github.com/godbus/dbus/v5"
-	appmanager "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.application1"
-	newAppmanager "github.com/linuxdeepin/go-dbus-factory/session/org.desktopspec.applicationmanager1"
-	gio "github.com/linuxdeepin/go-gir/gio-2.0"
-	"github.com/linuxdeepin/go-lib/appinfo/desktopappinfo"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	appmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.application1"
+	newAppmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.desktopspec.applicationmanager1"
+	gio "github.com/LingmoOS/go-gir-generator/gio-2.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/appinfo/desktopappinfo"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (

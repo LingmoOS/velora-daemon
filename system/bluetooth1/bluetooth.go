@@ -13,12 +13,12 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	ConfigManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	bluez "github.com/linuxdeepin/go-dbus-factory/system/org.bluez"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/strv"
+	ConfigManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	bluez "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.bluez"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 const (
@@ -27,7 +27,7 @@ const (
 	bluezDeviceDBusInterface  = "org.bluez.Device1"
 	bluezBatteryDBusInterface = "org.bluez.Battery1"
 
-	dbusServiceName = "org.deepin.dde.Bluetooth1"
+	dbusServiceName = "org.lingmo.Bluetooth1"
 	dbusPath        = "/org/deepin/dde/Bluetooth1"
 	dbusInterface   = dbusServiceName
 )

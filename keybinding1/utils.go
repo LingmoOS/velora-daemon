@@ -14,16 +14,16 @@ import (
 	"strings"
 	"time"
 
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/util"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	"github.com/LingmoOS/velora-daemon/keybinding1/util"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
 
-	gio "github.com/linuxdeepin/go-gir/gio-2.0"
-	"github.com/linuxdeepin/go-lib/strv"
+	gio "github.com/LingmoOS/go-gir-generator/gio-2.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 	"github.com/linuxdeepin/go-x11-client/ext/dpms"
 )
 

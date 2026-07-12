@@ -13,7 +13,7 @@ import (
 	"syscall"
 
 	"github.com/godbus/dbus/v5"
-	accounts "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.accounts1"
+	accounts "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.accounts1"
 )
 
 func init() {

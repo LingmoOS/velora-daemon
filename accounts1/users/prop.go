@@ -16,7 +16,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 	libdate "github.com/rickb777/date"
 )
 

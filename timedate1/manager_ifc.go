@@ -7,12 +7,12 @@ package timedate
 import (
 	"time"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/timedate1/zoneinfo"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	. "github.com/linuxdeepin/go-lib/gettext"
+	"github.com/LingmoOS/velora-daemon/timedate1/zoneinfo"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 var customTimeZoneList = []string{"Asia/Chengdu", "Asia/Beijing", "Asia/Nanjing", "Asia/Wuhan", "Asia/Xian", "Asia/Urumqi", "Asia/Chongqing"}

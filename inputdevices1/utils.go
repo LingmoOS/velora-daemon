@@ -8,7 +8,7 @@ import (
 	"errors"
 	"os/exec"
 
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
 )
 
 const (

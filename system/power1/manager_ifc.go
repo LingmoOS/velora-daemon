@@ -9,11 +9,11 @@ import (
 	"fmt"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.Power1"
+	dbusServiceName = "org.lingmo.Power1"
 	dbusPath        = "/org/deepin/dde/Power1"
 	dbusInterface   = dbusServiceName
 )

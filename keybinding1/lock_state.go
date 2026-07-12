@@ -12,8 +12,8 @@ import (
 
 	"github.com/godbus/dbus/v5"
 
-	"github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	kwayland "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.kwayland1"
+	"github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	kwayland "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.kwayland1"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/test"
 	"github.com/linuxdeepin/go-x11-client/util/keysyms"

@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/composite"
 	"github.com/linuxdeepin/go-x11-client/ext/damage"
@@ -22,7 +22,7 @@ const (
 	OpcodeSystemTrayCancelMessage
 )
 
-//go:generate dbusutil-gen -type TrayManager,StatusNotifierWatcher -import github.com/linuxdeepin/go-lib/strv traymanager.go status-notifier-watcher.go
+//go:generate dbusutil-gen -type TrayManager,StatusNotifierWatcher -import github.com/LingmoOS/golang-github-lingmo-go-lib/strv traymanager.go status-notifier-watcher.go
 //go:generate dbusutil-gen em -type TrayManager,StatusNotifierWatcher
 
 // TrayManager为系统托盘的管理器。

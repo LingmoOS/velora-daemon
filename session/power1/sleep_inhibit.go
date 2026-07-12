@@ -10,10 +10,10 @@ import (
 	"syscall"
 
 	"github.com/godbus/dbus/v5"
-	daemon "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.daemon1"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	daemon "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.daemon1"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const pipewireSuspendScript = "/usr/libexec/deepin/os-config/pipewire-suspend.sh"

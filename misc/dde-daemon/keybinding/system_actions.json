@@ -1,7 +1,7 @@
 {
     "Actions": [
         {
-            "Action": "dbus-send --print-reply --dest=org.deepin.dde.Launcher1 /org/deepin/dde/Launcher1 org.deepin.dde.Launcher1.Toggle",
+            "Action": "dbus-send --print-reply --dest=org.lingmo.Launcher1 /org/lingmo/Launcher1 org.lingmo.Launcher1.Toggle",
             "Key": "launcher"
         },
         {
@@ -10,7 +10,7 @@
         },
         {
             "Key": "deepinScreenRecorder",
-            "Action": "dbus-send --print-reply --dest=com.deepin.ScreenRecorder /com/deepin/ScreenRecorder com.deepin.ScreenRecorder.stopRecord"
+            "Action": "dbus-send --print-reply --dest=com.lingmo.ScreenRecorder /com/lingmo/ScreenRecorder com.lingmo.ScreenRecorder.stopRecord"
         },
         {
             "Key": "systemMonitor",
@@ -18,14 +18,14 @@
         },
         {
             "Key": "deepin-picker",
-            "Action": "dbus-send --print-reply --dest=com.deepin.Picker /com/deepin/Picker com.deepin.Picker.Show"
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Picker /com/lingmo/Picker com.lingmo.Picker.Show"
         },
         {
             "Action": "/usr/lib/deepin-daemon/dde-lock.sh",
             "Key": "lockScreen"
         },
         {
-            "Action": "dbus-send --print-reply --dest=org.deepin.dde.ShutdownFront1 /org/deepin/dde/ShutdownFront1 org.deepin.dde.ShutdownFront1.Show",
+            "Action": "dbus-send --print-reply --dest=org.lingmo.ShutdownFront1 /org/lingmo/ShutdownFront1 org.lingmo.ShutdownFront1.Show",
             "Key": "logout"
         },
         {
@@ -33,19 +33,19 @@
             "Key": "terminalQuake"
         },
         {
-            "Action": "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.StartScreenshot",
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.StartScreenshot",
             "Key": "screenshot"
         },
         {
-            "Action": "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.FullscreenScreenshot",
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.FullscreenScreenshot",
             "Key": "screenshotFullscreen"
         },
         {
-            "Action": "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.TopWindowScreenshot",
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.TopWindowScreenshot",
             "Key": "screenshotWindow"
         },
         {
-            "Action": "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.DelayScreenshot int64:5",
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.DelayScreenshot int64:5",
             "Key": "screenshotDelayed"
         },
         {
@@ -57,7 +57,7 @@
             "Key": "disableTouchpad"
         },
         {
-            "Action": "dbus-send --type=method_call --dest=org.deepin.dde.WMSwitcher1 /org/deepin/dde/WMSwitcher1 org.deepin.dde.WMSwitcher1.RequestSwitchWM",
+            "Action": "dbus-send --type=method_call --dest=org.lingmo.WMSwitcher1 /org/lingmo/WMSwitcher1 org.lingmo.WMSwitcher1.RequestSwitchWM",
             "Key": "wmSwitcher"
         },
         {
@@ -74,7 +74,7 @@
         },
         {
             "Key": "clipboard",
-            "Action": "dbus-send --print-reply --dest=org.deepin.dde.Clipboard1 /org/deepin/dde/Clipboard1 org.deepin.dde.Clipboard1.Toggle"
+            "Action": "dbus-send --print-reply --dest=org.lingmo.Clipboard1 /org/lingmo/Clipboard1 org.lingmo.Clipboard1.Toggle"
         },
         {
             "Key": "translation",
@@ -82,15 +82,15 @@
         },
 		{
             "key":"notificationCenter",
-            "Action":"dbus-send --print-reply --dest=org.deepin.dde.Widgets1 /org/deepin/dde/Widgets1 org.deepin.dde.Widgets1.Toggle"
+            "Action":"dbus-send --print-reply --dest=org.lingmo.Widgets1 /org/lingmo/Widgets1 org.lingmo.Widgets1.Toggle"
         },
         {
             "Key": "screenshotOcr",
-            "Action": "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.OcrScreenshot"
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.OcrScreenshot"
         },
 		{
             "key":"screenshotScroll",
-            "Action": "dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.ScrollScreenshot"
+            "Action": "dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.ScrollScreenshot"
         }
 
     ]

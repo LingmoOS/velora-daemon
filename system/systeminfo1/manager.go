@@ -16,7 +16,7 @@ import (
 	"sync"
 
 	"github.com/jouyouyun/hardware/dmi"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 //go:generate dbusutil-gen em -type Manager

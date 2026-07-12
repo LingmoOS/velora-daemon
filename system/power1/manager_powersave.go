@@ -6,7 +6,7 @@ package power
 
 import (
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/systemdunit"
+	"github.com/LingmoOS/velora-daemon/common/systemdunit"
 )
 
 type DSPCMode string

@@ -11,15 +11,15 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/cgroup"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/loader"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/cgroup"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.SwapSchedHelper1"
+	dbusServiceName = "org.lingmo.SwapSchedHelper1"
 	dbusPath        = "/org/deepin/dde/SwapSchedHelper1"
 	dbusInterface   = dbusServiceName
 )

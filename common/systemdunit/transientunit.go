@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	systemd1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.systemd1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	systemd1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.systemd1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 type TransientUnit struct {

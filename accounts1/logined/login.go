@@ -10,10 +10,10 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
-	"github.com/linuxdeepin/go-lib/log"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 //go:generate dbusutil-gen em -type Manager

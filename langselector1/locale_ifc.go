@@ -9,12 +9,12 @@ import (
 	"fmt"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (
 	dbusPath      = "/org/deepin/dde/LangSelector1"
-	dbusInterface = "org.deepin.dde.LangSelector1"
+	dbusInterface = "org.lingmo.LangSelector1"
 
 	localeIconStart    = "notification-change-start"
 	localeIconFailed   = "notification-change-failed"

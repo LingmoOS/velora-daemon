@@ -24,7 +24,7 @@ read/write
 默认为 
 
 ```
-dbus-send --print-reply --dest=com.deepin.SessionManager /com/deepin/SessionManager com.deepin.SessionManager.RequestSuspend
+dbus-send --print-reply --dest=com.lingmo.SessionManager /com/lingmo/SessionManager com.lingmo.SessionManager.RequestSuspend
 ```
 
 

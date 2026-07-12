@@ -9,7 +9,7 @@ import (
 	"os"
 
 	"github.com/adrg/xdg"
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 type Config struct {

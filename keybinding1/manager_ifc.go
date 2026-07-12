@@ -11,17 +11,17 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/util"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	"github.com/LingmoOS/velora-daemon/keybinding1/util"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.Keybinding1"
+	dbusServiceName = "org.lingmo.Keybinding1"
 	dbusPath        = "/org/deepin/dde/Keybinding1"
-	dbusInterface   = "org.deepin.dde.Keybinding1"
+	dbusInterface   = "org.lingmo.Keybinding1"
 )
 
 type ErrInvalidShortcutType struct {

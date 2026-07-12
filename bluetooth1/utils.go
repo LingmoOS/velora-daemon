@@ -9,7 +9,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/linuxdeepin/go-lib/procfs"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/procfs"
 )
 
 func isStringInArray(str string, list []string) bool {

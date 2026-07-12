@@ -6,8 +6,8 @@ package inputdevices1
 
 import (
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 type Touchscreen struct {

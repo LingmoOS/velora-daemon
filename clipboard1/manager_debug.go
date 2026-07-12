@@ -12,7 +12,7 @@ import (
 	"strconv"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 	x "github.com/linuxdeepin/go-x11-client"
 )
 

@@ -3,7 +3,7 @@
 package screensaver
 
 import (
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 func (v *ScreenSaver) GetExportedMethods() dbusutil.ExportedMethods {

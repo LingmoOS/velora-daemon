@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 func getMemoryUsage() (int64, error) {

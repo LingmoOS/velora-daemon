@@ -4,7 +4,7 @@
 
 package bluetooth
 
-//import . "github.com/linuxdeepin/go-lib/gettext"
+//import . "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 
 type profile struct {
 	uuid, name string

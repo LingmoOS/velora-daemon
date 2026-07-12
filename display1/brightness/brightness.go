@@ -9,10 +9,10 @@ import (
 	"math"
 
 	"github.com/godbus/dbus/v5"
-	backlight "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.backlighthelper1"
-	displayBl "github.com/linuxdeepin/go-lib/backlight/display"
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/multierr"
+	backlight "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.backlighthelper1"
+	displayBl "github.com/LingmoOS/golang-github-lingmo-go-lib/backlight/display"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/multierr"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 )

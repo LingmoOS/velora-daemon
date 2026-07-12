@@ -7,24 +7,24 @@ package timedate
 import (
 	"bufio"
 	"errors"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
 	"os"
 	"os/user"
 	"strings"
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	ddbus "github.com/linuxdeepin/dde-daemon/dbus"
-	"github.com/linuxdeepin/dde-daemon/session/common"
-	accounts "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.accounts1"
-	timedate "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.timedate1"
-	timedate1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.timedate1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
+	ddbus "github.com/LingmoOS/velora-daemon/dbus"
+	"github.com/LingmoOS/velora-daemon/session/common"
+	accounts "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.accounts1"
+	timedate "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.timedate1"
+	timedate1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.timedate1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
 )
 
 const (
-	dbusServiceName       = "org.deepin.dde.Timedate1"
+	dbusServiceName       = "org.lingmo.Timedate1"
 	dbusPath              = "/org/deepin/dde/Timedate1"
 	dbusInterface         = dbusServiceName
 	installerTimeZoneFile = "/etc/timezone"

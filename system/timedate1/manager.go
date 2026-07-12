@@ -13,14 +13,14 @@ import (
 	"sync"
 
 	dbus "github.com/godbus/dbus/v5"
-	ConfigManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
-	systemd1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.systemd1"
-	timedate1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.timedate1"
-	timesync1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.timesync1"
+	ConfigManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
+	systemd1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.systemd1"
+	timedate1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.timedate1"
+	timesync1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.timesync1"
 
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 )
 
 //go:generate dbusutil-gen -type Manager manager.go
@@ -40,7 +40,7 @@ type Manager struct {
 }
 
 const (
-	dbusServiceName = "org.deepin.dde.Timedate1"
+	dbusServiceName = "org.lingmo.Timedate1"
 	dbusPath        = "/org/deepin/dde/Timedate1"
 	dbusInterface   = dbusServiceName
 

@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 )
 

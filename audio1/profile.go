@@ -7,7 +7,7 @@ package audio
 import (
 	"sort"
 
-	"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 )
 
 type Profile struct {

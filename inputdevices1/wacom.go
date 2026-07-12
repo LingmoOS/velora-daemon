@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/linuxdeepin/dde-api/dxinput"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-api/dxinput"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 )

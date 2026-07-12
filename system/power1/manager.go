@@ -13,13 +13,13 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/powersupply"
-	"github.com/linuxdeepin/dde-api/powersupply/battery"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	DisplayManager "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.DisplayManager"
-	gudev "github.com/linuxdeepin/go-gir/gudev-1.0"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-api/powersupply"
+	"github.com/LingmoOS/velora-api/powersupply/battery"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	DisplayManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.DisplayManager"
+	gudev "github.com/LingmoOS/go-gir-generator/gudev-1.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 const (
@@ -40,7 +40,7 @@ type supportMode struct {
 	PowerSave  bool `json:"powersave"`
 }
 
-//go:generate dbusutil-gen -type Manager,Battery -import github.com/linuxdeepin/dde-api/powersupply/battery manager.go battery.go
+//go:generate dbusutil-gen -type Manager,Battery -import github.com/LingmoOS/velora-api/powersupply/battery manager.go battery.go
 //go:generate dbusutil-gen em -type Manager,Battery
 
 // https://www.kernel.org/doc/Documentation/power/power_supply_class.txt

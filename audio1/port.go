@@ -7,7 +7,7 @@ package audio
 import (
 	"fmt"
 
-	"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 )
 
 type Port struct {

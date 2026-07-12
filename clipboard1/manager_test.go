@@ -8,7 +8,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/linuxdeepin/dde-daemon/clipboard1/mocks"
+	"github.com/LingmoOS/velora-daemon/clipboard1/mocks"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/stretchr/testify/assert"
 )

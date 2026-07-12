@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/linuxdeepin/go-lib/strv"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (

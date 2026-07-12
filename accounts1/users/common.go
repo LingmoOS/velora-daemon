@@ -9,7 +9,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 )
 
 func isStrInArray(str string, array []string) bool {

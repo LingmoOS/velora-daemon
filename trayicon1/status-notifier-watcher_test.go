@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	dbus "github.com/godbus/dbus/v5"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.dbus"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.dbus"
 	"github.com/stretchr/testify/assert"
 )
 

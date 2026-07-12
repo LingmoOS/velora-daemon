@@ -6,9 +6,9 @@ package main
 
 import "C"
 import (
-	"github.com/linuxdeepin/dde-daemon/display1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/display1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 	x "github.com/linuxdeepin/go-x11-client"
 	"os"
 )

@@ -8,12 +8,12 @@ import (
 	"errors"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 	x "github.com/linuxdeepin/go-x11-client"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.TrayManager1"
+	dbusServiceName = "org.lingmo.TrayManager1"
 	dbusInterface   = dbusServiceName
 	dbusPath        = "/org/deepin/dde/TrayManager1"
 )

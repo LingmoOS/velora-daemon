@@ -9,7 +9,7 @@ import (
 	"path"
 	"testing"
 
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 	C "gopkg.in/check.v1"
 )
 

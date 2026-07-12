@@ -6,12 +6,12 @@ package lang
 
 import (
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	accounts "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.accounts1"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-daemon/loader"
+	accounts "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.accounts1"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 	"os"
 	"path/filepath"
 	"sync"

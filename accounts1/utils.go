@@ -19,11 +19,11 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
-	"github.com/linuxdeepin/go-lib/encoding/kv"
-	"github.com/linuxdeepin/go-lib/graphic"
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/encoding/kv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/graphic"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 // #nosec G101

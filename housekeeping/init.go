@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	. "github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/loader"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (
@@ -135,7 +135,7 @@ func (d *Daemon) checkSpace(dir string, state bool) bool {
 	err = sendNotify2("dialog-warning", "",
 		Tr("Insufficient disk space, please clean up in time!"),
 		Tr("Go to clean up"),
-		"dbus-send,--type=method_call,--dest=com.deepin.defender.hmiscreen,/com/deepin/defender/hmiscreen,com.deepin.defender.hmiscreen.ShowModule,string:diskcleaner",
+		"dbus-send,--type=method_call,--dest=com.lingmo.defender.hmiscreen,/com/lingmo/defender/hmiscreen,com.lingmo.defender.hmiscreen.ShowModule,string:diskcleaner",
 		5000,
 	)
 	if err != nil {

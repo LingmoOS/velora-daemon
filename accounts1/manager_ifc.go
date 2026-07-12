@@ -16,18 +16,18 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/accounts1/checkers"
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/users/passwd"
+	"github.com/LingmoOS/velora-daemon/accounts1/checkers"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/users/passwd"
 )
 
 const (
 	nilObjPath      = dbus.ObjectPath("/")
-	dbusServiceName = "org.deepin.dde.Accounts1"
+	dbusServiceName = "org.lingmo.Accounts1"
 	dbusPath        = "/org/deepin/dde/Accounts1"
-	dbusInterface   = "org.deepin.dde.Accounts1"
+	dbusInterface   = "org.lingmo.Accounts1"
 )
 
 func (*Manager) GetInterfaceName() string {

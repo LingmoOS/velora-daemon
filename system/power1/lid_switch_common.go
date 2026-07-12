@@ -19,7 +19,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	upower "github.com/linuxdeepin/go-dbus-factory/org.freedesktop.upower"
+	upower "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.freedesktop.upower"
 )
 
 const (

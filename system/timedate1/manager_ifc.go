@@ -5,12 +5,12 @@
 package timedated
 
 import (
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 	"os"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/timedate1/zoneinfo"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-daemon/timedate1/zoneinfo"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 // SetTime set the current time and date,

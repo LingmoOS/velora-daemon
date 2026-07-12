@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	lastore "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.lastore1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	lastore "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.lastore1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 type dconfigLogCollector struct {
@@ -116,7 +116,7 @@ func (c *dconfigLogCollector) updateLastoreConfig(service *dbusutil.Service) (er
 func (c *dconfigLogCollector) updateSyncConfig(service *dbusutil.Service) error {
 	c.infoPropMu.Lock()
 	defer c.infoPropMu.Unlock()
-	syncObj := service.Conn().Object("com.deepin.sync.Helper", "/com/deepin/sync/Helper")
+	syncObj := service.Conn().Object("com.lingmo.sync.Helper", "/com/lingmo/sync/Helper")
 	var ret bool
 	err := syncObj.Call("com.deepin.sync.Helper.IsDeveloperMode", 0).Store(&ret)
 	if err != nil {
@@ -128,9 +128,9 @@ func (c *dconfigLogCollector) updateSyncConfig(service *dbusutil.Service) error 
 }
 
 func (c *dconfigLogCollector) getLastoreBoolProp(service *dbusutil.Service, propName string) (bool, error) {
-	lastoreObj := service.Conn().Object("org.deepin.dde.Lastore1", "/org/deepin/dde/Lastore1")
+	lastoreObj := service.Conn().Object("org.lingmo.Lastore1", "/org/lingmo/Lastore1")
 	var ret dbus.Variant
-	err := lastoreObj.Call("org.freedesktop.DBus.Properties.Get", 0, "org.deepin.dde.Lastore1.Updater", propName).Store(&ret)
+	err := lastoreObj.Call("org.freedesktop.DBus.Properties.Get", 0, "org.lingmo.Lastore1.Updater", propName).Store(&ret)
 	if err != nil {
 		logger.Warning(err)
 		return false, err

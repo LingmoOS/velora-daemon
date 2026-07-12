@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.lingmo.SoundEffect1
+Exec=/bin/false
+SystemdService=org.lingmo.SoundEffect1.service

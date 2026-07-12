@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 type config struct {

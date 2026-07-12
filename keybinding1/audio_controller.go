@@ -9,11 +9,11 @@ import (
 	"strings"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	. "github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	audio "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.audio1"
-	backlight "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.backlighthelper1"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	. "github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	audio "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.audio1"
+	backlight "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.backlighthelper1"
 )
 
 const (

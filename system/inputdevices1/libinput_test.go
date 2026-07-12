@@ -7,7 +7,7 @@ package inputdevices1
 import (
 	"testing"
 
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 	"github.com/stretchr/testify/assert"
 )
 

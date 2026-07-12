@@ -1,4 +1,4 @@
-module github.com/linuxdeepin/dde-daemon
+module github.com/LingmoOS/velora-daemon
 
 go 1.20
 
@@ -8,10 +8,10 @@ require (
 	github.com/fsnotify/fsnotify v1.8.0
 	github.com/godbus/dbus/v5 v5.1.0
 	github.com/jouyouyun/hardware v0.1.8
-	github.com/linuxdeepin/dde-api v0.0.0-20260310032929-7f0ab8f52e1b
-	github.com/linuxdeepin/go-dbus-factory v0.0.0-20260227070938-bcb8d12841ab
-	github.com/linuxdeepin/go-gir v0.0.0-20251204113853-1873b5530f50
-	github.com/linuxdeepin/go-lib v0.0.0-20260205120541-a1f572ce1442
+	github.com/LingmoOS/velora-api v0.0.0-20260310032929-7f0ab8f52e1b
+	github.com/LingmoOS/golang-github-lingmo-go-dbus-factory v0.0.0-20260227070938-bcb8d12841ab
+	github.com/LingmoOS/go-gir-generator v0.0.0-20251204113853-1873b5530f50
+	github.com/LingmoOS/golang-github-lingmo-go-lib v0.0.0-20260205120541-a1f572ce1442
 	github.com/linuxdeepin/go-x11-client v0.0.0-20240415051504-c8e43d028ff9
 	github.com/mdlayher/netlink v1.7.2
 	github.com/rickb777/date v1.21.1

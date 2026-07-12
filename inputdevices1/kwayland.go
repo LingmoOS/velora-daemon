@@ -10,10 +10,10 @@ import (
 	"strings"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/dxinput"
-	"github.com/linuxdeepin/dde-api/dxinput/common"
-	"github.com/linuxdeepin/dde-api/dxinput/kwayland"
-	kwin "github.com/linuxdeepin/go-dbus-factory/session/org.kde.kwin"
+	"github.com/LingmoOS/velora-api/dxinput"
+	"github.com/LingmoOS/velora-api/dxinput/common"
+	"github.com/LingmoOS/velora-api/dxinput/kwayland"
+	kwin "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.kde.kwin"
 )
 
 var (

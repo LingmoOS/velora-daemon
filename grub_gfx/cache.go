@@ -10,8 +10,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/linuxdeepin/dde-daemon/grub_common"
-	"github.com/linuxdeepin/go-lib/xdg/basedir"
+	"github.com/LingmoOS/velora-daemon/grub_common"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/basedir"
 )
 
 var detectCacheFile = filepath.Join(basedir.GetUserCacheDir(),

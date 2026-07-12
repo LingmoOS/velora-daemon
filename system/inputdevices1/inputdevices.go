@@ -15,9 +15,9 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (

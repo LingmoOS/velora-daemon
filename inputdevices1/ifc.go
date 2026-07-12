@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"github.com/godbus/dbus/v5"
-	langselector "github.com/linuxdeepin/dde-daemon/langselector1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	langselector "github.com/LingmoOS/velora-daemon/langselector1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 func (m *Mouse) Reset() *dbus.Error {

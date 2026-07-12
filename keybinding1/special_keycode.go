@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	power "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.power1"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	power "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.power1"
 )
 
 // 按键码
@@ -206,7 +206,7 @@ func (m *Manager) handleMicMute() {
 
 // 打开控制中心
 func (m *Manager) handleOpenControlCenter() {
-	cmd := "dbus-send --session --dest=org.deepin.dde.ControlCenter1 --print-reply /org/deepin/dde/ControlCenter1 org.deepin.dde.ControlCenter1.Show"
+	cmd := "dbus-send --session --dest=org.lingmo.ControlCenter1 --print-reply /org/lingmo/ControlCenter1 org.lingmo.ControlCenter1.Show"
 	m.execCmd(cmd, false)
 }
 
@@ -480,7 +480,7 @@ func (m *Manager) handleRFKILL() {
 }
 
 func (m *Manager) handleScreenshot() {
-	m.execCmd("dbus-send --print-reply --dest=com.deepin.Screenshot /com/deepin/Screenshot com.deepin.Screenshot.StartScreenshot", false)
+	m.execCmd("dbus-send --print-reply --dest=com.lingmo.Screenshot /com/lingmo/Screenshot com.lingmo.Screenshot.StartScreenshot", false)
 }
 
 func (m *Manager) handleOpenDeviceManager() {

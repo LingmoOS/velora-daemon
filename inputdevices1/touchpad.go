@@ -13,13 +13,13 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	inputdevices "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.inputdevices1"
-	power "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.power1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/strv"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	inputdevices "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.inputdevices1"
+	power "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.power1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const (

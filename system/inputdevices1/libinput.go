@@ -13,7 +13,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 //export log_handler_go

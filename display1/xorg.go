@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/linuxdeepin/dde-daemon/common/scale"
+	"github.com/LingmoOS/velora-daemon/common/scale"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/input"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"

@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 
 	"github.com/godbus/dbus/v5"
-	btcommon "github.com/linuxdeepin/dde-daemon/common/bluetooth"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/gettext"
+	btcommon "github.com/LingmoOS/velora-daemon/common/bluetooth"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 const (

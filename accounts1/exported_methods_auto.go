@@ -3,7 +3,7 @@
 package accounts
 
 import (
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 func (v *ImageBlur) GetExportedMethods() dbusutil.ExportedMethods {

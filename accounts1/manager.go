@@ -18,16 +18,16 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	udcp "github.com/linuxdeepin/go-dbus-factory/system/com.deepin.udcp.iam"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/tasker"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	udcp "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/com.lingmo.udcp.iam"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/tasker"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	"github.com/linuxdeepin/dde-daemon/common/sessionmsg"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	"github.com/LingmoOS/velora-daemon/common/sessionmsg"
 )
 
 const (

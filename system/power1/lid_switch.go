@@ -5,8 +5,8 @@
 package power
 
 import (
-	hostname1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.hostname1"
-	"github.com/linuxdeepin/go-lib/arch"
+	hostname1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.hostname1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/arch"
 )
 
 func (m *Manager) initLidSwitch() {

@@ -7,7 +7,7 @@ package x_event_monitor
 import (
 	"testing"
 
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 func Test_simpleFunc(t *testing.T) {

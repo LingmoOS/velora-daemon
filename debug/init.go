@@ -5,7 +5,7 @@
 package debug
 
 import (
-	"github.com/linuxdeepin/dde-daemon/loader"
+	"github.com/LingmoOS/velora-daemon/loader"
 )
 
 func init() {

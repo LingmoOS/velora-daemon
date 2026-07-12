@@ -18,24 +18,24 @@ import (
 	"sync"
 	"time"
 
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/dxinput"
-	dxutil "github.com/linuxdeepin/dde-api/dxinput/utils"
-	"github.com/linuxdeepin/dde-daemon/common/scale"
-	"github.com/linuxdeepin/dde-daemon/display1/brightness"
-	xs "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.xsettings1"
-	sysdisplay "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.display1"
-	dgesture "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.gesture1"
-	inputdevices "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.inputdevices1"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	timedate1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.timedate1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/xdg/basedir"
+	"github.com/LingmoOS/velora-api/dxinput"
+	dxutil "github.com/LingmoOS/velora-api/dxinput/utils"
+	"github.com/LingmoOS/velora-daemon/common/scale"
+	"github.com/LingmoOS/velora-daemon/display1/brightness"
+	xs "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.xsettings1"
+	sysdisplay "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.display1"
+	dgesture "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.gesture1"
+	inputdevices "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.inputdevices1"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	timedate1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.timedate1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/basedir"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 	"golang.org/x/xerrors"
@@ -132,7 +132,7 @@ type touchscreenMapValue struct {
 	Auto       bool
 }
 
-//go:generate dbusutil-gen -output display_dbusutil.go -import github.com/godbus/dbus/v5,github.com/linuxdeepin/go-x11-client,github.com/linuxdeepin/go-lib/strv -type Manager,Monitor manager.go monitor.go
+//go:generate dbusutil-gen -output display_dbusutil.go -import github.com/godbus/dbus/v5,github.com/linuxdeepin/go-x11-client,github.com/LingmoOS/golang-github-lingmo-go-lib/strv -type Manager,Monitor manager.go monitor.go
 //go:generate dbusutil-gen em -type Manager,Monitor
 
 type Manager struct {

@@ -8,16 +8,16 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	libdisplay "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.display1"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
+	libdisplay "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.display1"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
 )
 
 //go:generate dbusutil-gen em -type Manager
 
 const (
-	dbusServiceName = "org.deepin.dde.SessionWatcher1"
+	dbusServiceName = "org.lingmo.SessionWatcher1"
 	dbusPath        = "/org/deepin/dde/SessionWatcher1"
 	dbusInterface   = dbusServiceName
 )

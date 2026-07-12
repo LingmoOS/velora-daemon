@@ -6,9 +6,9 @@ package dbus
 
 import (
 	"github.com/godbus/dbus/v5"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 // IsSessionBusActivated check the special session bus name whether activated

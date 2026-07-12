@@ -14,15 +14,15 @@ import (
 	"unicode"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/util"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
-	daemon "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.daemon1"
-	"github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/keyfile"
-	"github.com/linuxdeepin/go-lib/log"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	"github.com/LingmoOS/velora-daemon/keybinding1/util"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
+	daemon "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.daemon1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/record"
 	"github.com/linuxdeepin/go-x11-client/util/keybind"
@@ -881,7 +881,7 @@ func (sm *ShortcutManager) isPidVirtualMachine(pid uint32) (bool, error) {
 	return ret, nil
 }
 
-// 初始化go-dbus-factory system DBUS : org.deepin.dde.Daemon1
+// 初始化go-dbus-factory system DBUS : org.lingmo.Daemon1
 func (sm *ShortcutManager) initSysDaemon() error {
 	sysBus, err := dbus.SystemBus()
 	if err != nil {
@@ -937,7 +937,7 @@ func (sm *ShortcutManager) handleXRecordKeyEvent(pressed bool, code uint8, state
 			// 显示桌面快捷键是窗管控制，此处需要隐藏启动器
 			if shortcut != nil && shortcut.GetType() == ShortcutTypeWM && shortcut.GetId() == "showDesktop" {
 				go func() {
-					cmd := "dbus-send --print-reply --dest=org.deepin.dde.Launcher1 /org/deepin/dde/Launcher1 org.deepin.dde.Launcher1.Hide"
+					cmd := "dbus-send --print-reply --dest=org.lingmo.Launcher1 /org/lingmo/Launcher1 org.lingmo.Launcher1.Hide"
 					err := exec.Command("/bin/sh", "-c", cmd).Run()
 					if err != nil {
 						logger.Warning(err)

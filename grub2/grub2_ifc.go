@@ -10,12 +10,12 @@ import (
 	"strings"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/grub_common"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/velora-daemon/grub_common"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.Grub2"
+	dbusServiceName = "org.lingmo.Grub2"
 	dbusPath        = "/org/deepin/dde/Grub2"
 	dbusInterface   = dbusServiceName
 

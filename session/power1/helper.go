@@ -6,24 +6,24 @@ package power
 
 import (
 	"github.com/godbus/dbus/v5"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
 	"os"
 
 	// system bus
-	shutdownfront "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.shutdownfront1"
-	sensorproxy "github.com/linuxdeepin/go-dbus-factory/system/net.hadess.sensorproxy"
-	daemon "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.daemon1"
-	libpower "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.power1"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
+	shutdownfront "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.shutdownfront1"
+	sensorproxy "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/net.hadess.sensorproxy"
+	daemon "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.daemon1"
+	libpower "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.power1"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
 
 	// session bus
-	display "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.display1"
-	sessionmanager "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionmanager1"
-	sessionwatcher "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionwatcher1"
-	screensaver "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.screensaver"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	display "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.display1"
+	sessionmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionmanager1"
+	sessionwatcher "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionwatcher1"
+	screensaver "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.screensaver"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 	x "github.com/linuxdeepin/go-x11-client"
 )
 

@@ -10,7 +10,7 @@ import (
 	libdate "github.com/rickb777/date"
 	"github.com/stretchr/testify/assert"
 
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 func Test_GetUserInfos(t *testing.T) {

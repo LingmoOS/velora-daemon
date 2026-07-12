@@ -9,16 +9,16 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	lastore "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.lastore1"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/loader"
+	lastore "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.lastore1"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 const (
 	dbusPath        = "/org/deepin/dde/LastoreSessionHelper1"
-	dbusServiceName = "org.deepin.dde.LastoreSessionHelper1"
+	dbusServiceName = "org.lingmo.LastoreSessionHelper1"
 )
 
 const (

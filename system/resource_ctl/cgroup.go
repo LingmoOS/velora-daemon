@@ -15,8 +15,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 const (

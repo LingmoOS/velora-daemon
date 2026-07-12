@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/linuxdeepin/go-lib/pulse"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

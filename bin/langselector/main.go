@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/linuxdeepin/dde-daemon/langselector1"
-	"github.com/linuxdeepin/go-lib/gettext"
+	"github.com/LingmoOS/velora-daemon/langselector1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 func main() {

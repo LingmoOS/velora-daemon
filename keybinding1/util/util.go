@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
 )
 
 func MarshalJSON(v interface{}) (string, error) {

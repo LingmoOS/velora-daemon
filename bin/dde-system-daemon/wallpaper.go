@@ -17,9 +17,9 @@ import (
 	"sync"
 
 	dbus "github.com/godbus/dbus/v5"
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 const maxCount = 20

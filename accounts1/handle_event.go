@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/fsnotify/fsnotify"
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 const (

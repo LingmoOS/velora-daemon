@@ -17,19 +17,19 @@ import (
 
 	"github.com/godbus/dbus/v5"
 	// dbus services:
-	"github.com/linuxdeepin/dde-api/lang_info"
-	"github.com/linuxdeepin/dde-api/language_support"
-	"github.com/linuxdeepin/dde-api/userenv"
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	ddbus "github.com/linuxdeepin/dde-daemon/dbus"
-	libnetwork "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.network1"
-	notifications "github.com/linuxdeepin/go-dbus-factory/session/org.freedesktop.notifications"
-	lastore "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.lastore1"
-	localehelper "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.localehelper1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	. "github.com/linuxdeepin/go-lib/gettext"
-	"github.com/linuxdeepin/go-lib/strv"
-	"github.com/linuxdeepin/go-lib/xdg/basedir"
+	"github.com/LingmoOS/velora-api/lang_info"
+	"github.com/LingmoOS/velora-api/language_support"
+	"github.com/LingmoOS/velora-api/userenv"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	ddbus "github.com/LingmoOS/velora-daemon/dbus"
+	libnetwork "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.network1"
+	notifications "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.freedesktop.notifications"
+	lastore "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.lastore1"
+	localehelper "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.localehelper1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/basedir"
 )
 
 const (
@@ -558,7 +558,7 @@ func (lang *LangSelector) doGenerateLocale(locale string) error {
 		case <-timer.C:
 			return errors.New("wait success signal timed out")
 		case sig := <-sigChan:
-			if sig.Path != dbus.ObjectPath("/org/deepin/dde/LocaleHelper1") || sig.Name != "org.deepin.dde.LocaleHelper1.Success" {
+			if sig.Path != dbus.ObjectPath("/org/lingmo/LocaleHelper1") || sig.Name != "org.lingmo.LocaleHelper1.Success" {
 				continue
 			}
 

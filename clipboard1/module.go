@@ -7,8 +7,8 @@ package clipboard
 import (
 	"os"
 
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/xfixes"
 )

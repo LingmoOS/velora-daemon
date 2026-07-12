@@ -11,9 +11,9 @@ import (
 	"sort"
 
 	"github.com/godbus/dbus/v5"
-	. "github.com/linuxdeepin/dde-daemon/common/dsync"
-	"github.com/linuxdeepin/go-gir/glib-2.0"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	. "github.com/LingmoOS/velora-daemon/common/dsync"
+	"github.com/LingmoOS/go-gir-generator/glib-2.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (

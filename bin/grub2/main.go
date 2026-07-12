@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/dde-daemon/grub2"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/velora-daemon/grub2"
 )
 
 var logger = log.NewLogger("daemon/grub2")

@@ -23,7 +23,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 type ddcci struct {

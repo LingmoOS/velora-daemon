@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/xfixes"
 )

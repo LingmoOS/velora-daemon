@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/linuxdeepin/dde-daemon/keybinding1/util"
-	"github.com/linuxdeepin/go-lib/pinyin_search"
+	"github.com/LingmoOS/velora-daemon/keybinding1/util"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pinyin_search"
 )
 
 type BaseShortcut struct {

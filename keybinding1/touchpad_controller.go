@@ -6,8 +6,8 @@ package keybinding
 
 import (
 	"github.com/godbus/dbus/v5"
-	. "github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	inputdevices "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.inputdevices1"
+	. "github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	inputdevices "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.inputdevices1"
 )
 
 type TouchPadController struct {

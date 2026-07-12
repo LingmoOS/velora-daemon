@@ -5,9 +5,9 @@
 package screensaver
 
 import (
-	"github.com/linuxdeepin/dde-daemon/common/dsync"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/common/dsync"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 func init() {

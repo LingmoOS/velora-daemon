@@ -5,10 +5,10 @@
 package accounts
 
 import (
-	"github.com/linuxdeepin/dde-daemon/accounts1/logined"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/go-lib/gdkpixbuf"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/accounts1/logined"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gdkpixbuf"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 var (

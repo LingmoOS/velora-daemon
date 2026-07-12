@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.lingmo.XEventMonitor1
+Exec=/usr/lib/deepin-daemon/dde-session-daemon -l info
+SystemdService=org.lingmo.session.Daemon1.service

@@ -6,8 +6,8 @@ package scale
 
 import (
 	"fmt"
-	"github.com/linuxdeepin/go-lib/keyfile"
-	"github.com/linuxdeepin/go-lib/xdg/basedir"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/basedir"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/randr"
 	"math"

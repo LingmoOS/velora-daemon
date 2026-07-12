@@ -7,7 +7,7 @@ package x_event_monitor
 import (
 	"fmt"
 
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 	"github.com/stretchr/testify/assert"
 
 	"testing"

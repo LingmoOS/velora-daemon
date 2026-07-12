@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.lingmo.BacklightHelper1
+Exec=/bin/false
+SystemdService=dde-backlight-helper.service

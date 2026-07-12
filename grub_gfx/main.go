@@ -6,8 +6,8 @@ package grub_gfx
 
 import (
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/grub_common"
-	ofd "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
+	"github.com/LingmoOS/velora-daemon/grub_common"
+	ofd "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
 )
 
 func detectChange() {

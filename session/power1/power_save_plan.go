@@ -14,9 +14,9 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	ConfigManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/procfs"
+	ConfigManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/procfs"
 	x "github.com/linuxdeepin/go-x11-client"
 	xscreensaver "github.com/linuxdeepin/go-x11-client/ext/screensaver"
 	"github.com/linuxdeepin/go-x11-client/util/wm/ewmh"

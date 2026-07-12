@@ -106,7 +106,7 @@
         },
         "Action": {
             "Type": "commandline",
-            "Action": "dbus-send --type=method_call --dest=org.deepin.dde.Launcher1 /org/deepin/dde/Launcher1 org.deepin.dde.Launcher1.Toggle"
+            "Action": "dbus-send --type=method_call --dest=org.lingmo.Launcher1 /org/lingmo/Launcher1 org.lingmo.Launcher1.Toggle"
         }
     },
     {
@@ -161,7 +161,7 @@
         },
         "Action": {
             "Type": "commandline",
-            "Action": "dbus-send --type=method_call --dest=org.deepin.dde.Launcher1 /org/deepin/dde/Launcher1 org.deepin.dde.Launcher1.Toggle"
+            "Action": "dbus-send --type=method_call --dest=org.lingmo.Launcher1 /org/lingmo/Launcher1 org.lingmo.Launcher1.Toggle"
         }
     }
 ]

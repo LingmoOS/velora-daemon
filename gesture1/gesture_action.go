@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/linuxdeepin/go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 type actionInfo struct {
@@ -216,7 +216,7 @@ func (m *Manager) doToggleGrandSearch() error {
 }
 
 func (m *Manager) doToggleNotifications() error {
-	cmd := "dbus-send --print-reply --dest=org.deepin.dde.Osd1 /org/deepin/dde/shell/notification/center org.deepin.dde.shell.notification.center.Toggle"
+	cmd := "dbus-send --print-reply --dest=org.lingmo.Osd1 /org/lingmo/shell/notification/center org.lingmo.shell.notification.center.Toggle"
 	return exec.Command("/bin/bash", "-c", cmd).Run()
 }
 

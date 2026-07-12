@@ -11,13 +11,13 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/calltrace"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	dbusmgr "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	"github.com/linuxdeepin/go-gir/glib-2.0"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/gsettings"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/calltrace"
+	"github.com/LingmoOS/velora-daemon/loader"
+	dbusmgr "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	"github.com/LingmoOS/go-gir-generator/glib-2.0"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gsettings"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 //go:generate dbusutil-gen em -type SessionDaemon
@@ -27,7 +27,7 @@ const (
 	ProfTypeMem = "memory" //nolint
 
 	dbusPath        = "/org/deepin/dde/Daemon1"
-	dbusServiceName = "org.deepin.dde.Daemon1"
+	dbusServiceName = "org.lingmo.Daemon1"
 	dbusInterface   = dbusServiceName
 	configManagerId = "org.desktopspec.ConfigManager"
 )

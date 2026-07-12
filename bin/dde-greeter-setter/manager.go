@@ -12,14 +12,14 @@ import (
 	"strconv"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 )
 
 //go:generate dbusutil-gen em -type Manager
 
 const (
-	dbusServiceName = "org.deepin.dde.Greeter1"
+	dbusServiceName = "org.lingmo.Greeter1"
 	dbusPath        = "/org/deepin/dde/Greeter1"
 	dbusInterface   = dbusServiceName
 )

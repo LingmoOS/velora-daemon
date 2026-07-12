@@ -23,11 +23,11 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	authenticate "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.authenticate1"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/procfs"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	authenticate "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.authenticate1"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/procfs"
 	"golang.org/x/sys/unix"
 )
 

@@ -6,7 +6,7 @@ package timedate
 
 import (
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 func (m *Manager) listenPropChanged() {

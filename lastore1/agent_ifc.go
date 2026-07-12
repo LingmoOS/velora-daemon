@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"github.com/godbus/dbus/v5"
-	kwayland "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.kwayland1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	kwayland "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.kwayland1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 func (*Agent) GetInterfaceName() string {
@@ -92,7 +92,7 @@ func (a *Agent) SendNotify(sender dbus.Sender, appName string, replacesId uint32
 			if err != nil {
 				logger.Warning(err)
 			} else {
-				wInfo, err := kwayland.NewWindow(a.sessionService.Conn(), dbus.ObjectPath(fmt.Sprintf("/org/deepin/dde/KWayland1/PlasmaWindow_%v", winId)))
+				wInfo, err := kwayland.NewWindow(a.sessionService.Conn(), dbus.ObjectPath(fmt.Sprintf("/org/lingmo/KWayland1/PlasmaWindow_%v", winId)))
 				if err != nil {
 					logger.Warning(err)
 				} else {

@@ -4,7 +4,7 @@ Description=deepin grub2 config service
 [Service]
 Type=dbus
 User=root
-BusName=org.deepin.dde.Grub2
+BusName=org.lingmo.Grub2
 ExecStart=/usr/lib/deepin-daemon/grub2
 StandardOutput=null
 StandardError=journal
@@ -46,4 +46,4 @@ RemoveIPC=yes
 #MemoryLimit=100M
 
 [Install]
-Alias=dbus-org.deepin.dde.Grub2.service
+Alias=dbus-org.lingmo.Grub2.service

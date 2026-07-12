@@ -3,7 +3,7 @@ Description=dde backlight helper service
 
 [Service]
 Type=dbus
-BusName=org.deepin.dde.BacklightHelper1
+BusName=org.lingmo.BacklightHelper1
 User=root
 ExecStart=/usr/lib/deepin-daemon/backlight_helper
 StandardOutput=null
@@ -38,4 +38,4 @@ RemoveIPC=yes
 #MemoryLimit=100M
 
 [Install]
-Alias=dbus-org.deepin.dde.BacklightHelper1.service
+Alias=dbus-org.lingmo.BacklightHelper1.service

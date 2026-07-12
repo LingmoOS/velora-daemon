@@ -31,14 +31,14 @@ import (
 	"unsafe"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/lang_info"
-	"github.com/linuxdeepin/dde-daemon/accounts1/users"
-	"github.com/linuxdeepin/dde-daemon/common/sessionmsg"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/gdkpixbuf"
-	"github.com/linuxdeepin/go-lib/imgutil"
-	"github.com/linuxdeepin/go-lib/strv"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-api/lang_info"
+	"github.com/LingmoOS/velora-daemon/accounts1/users"
+	"github.com/LingmoOS/velora-daemon/common/sessionmsg"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gdkpixbuf"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/imgutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 	"golang.org/x/xerrors"
 )
 
@@ -574,7 +574,7 @@ func (u *User) EnableWechatAuth(sender dbus.Sender, value bool) *dbus.Error {
 func (u *User) UpdateWechatAuthState() *dbus.Error {
 	logger.Infof("DBus call UpdateWechatAuthState")
 	// 通过synchelper检查本地账户是否有绑定的UOS ID
-	syncObj := u.service.Conn().Object("com.deepin.sync.Helper", "/com/deepin/sync/Helper")
+	syncObj := u.service.Conn().Object("com.lingmo.sync.Helper", "/com/lingmo/sync/Helper")
 	var uosid string
 	err := syncObj.Call("com.deepin.sync.Helper.UOSID", 0).Store(&uosid)
 	if err != nil {

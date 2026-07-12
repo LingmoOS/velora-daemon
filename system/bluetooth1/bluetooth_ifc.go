@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	sysbtagent "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.bluetooth1.agent"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	sysbtagent "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.bluetooth1.agent"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 func (b *SysBluetooth) ConnectDevice(devPath dbus.ObjectPath, adapterPath dbus.ObjectPath) *dbus.Error {

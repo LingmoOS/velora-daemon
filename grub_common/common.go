@@ -19,8 +19,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/linuxdeepin/go-lib/encoding/kv"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/encoding/kv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 var logger = log.NewLogger("grub_common")

@@ -9,8 +9,8 @@ package audio
 import (
 	"strings"
 
-	"github.com/linuxdeepin/go-lib/pulse"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 func (a *Audio) getCardById(id uint32) *Card {

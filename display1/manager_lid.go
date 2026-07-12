@@ -7,8 +7,8 @@ package display1
 import (
 	"fmt"
 
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	syspower "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.power1"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	syspower "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.power1"
 )
 
 const (

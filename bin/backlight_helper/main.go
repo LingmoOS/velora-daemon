@@ -14,17 +14,17 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/bin/backlight_helper/ddcci"
-	ConfigManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/bin/backlight_helper/ddcci"
+	ConfigManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 //go:generate dbusutil-gen em -type Manager
 
 const (
-	dbusServiceName = "org.deepin.dde.BacklightHelper1"
+	dbusServiceName = "org.lingmo.BacklightHelper1"
 	dbusPath        = "/org/deepin/dde/BacklightHelper1"
 	dbusInterface   = dbusServiceName
 	configManagerId = "org.desktopspec.ConfigManager"

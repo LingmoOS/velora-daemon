@@ -7,10 +7,10 @@ package langselector
 import (
 	"time"
 
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 const (

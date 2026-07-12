@@ -9,7 +9,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 )
 
 func isStringInArray(str string, list []string) bool {

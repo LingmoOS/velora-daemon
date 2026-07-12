@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
 
 	"math"
 	"os"
@@ -16,18 +16,18 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
-	clipboard "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.clipboard1"
-	dock "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.daemon.dock1"
-	display "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.display1"
-	launchpad "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.launcher1"
-	notification "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.notification1"
-	sessionmanager "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionmanager1"
-	sessionwatcher "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionwatcher1"
-	daemon "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.daemon1"
-	gesture "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.gesture1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
+	clipboard "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.clipboard1"
+	dock "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.daemon.dock1"
+	display "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.display1"
+	launchpad "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.launcher1"
+	notification "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.notification1"
+	sessionmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionmanager1"
+	sessionwatcher "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionwatcher1"
+	daemon "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.daemon1"
+	gesture "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.gesture1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
 )
 
 //go:generate dbusutil-gen em -type Manager

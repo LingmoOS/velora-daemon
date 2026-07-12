@@ -5,7 +5,7 @@
 package keybinding
 
 import (
-	"github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
+	"github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/util/keybind"
 	"github.com/linuxdeepin/go-x11-client/util/mousebind"

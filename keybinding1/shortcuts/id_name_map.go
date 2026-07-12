@@ -5,7 +5,7 @@
 package shortcuts
 
 import (
-	"github.com/linuxdeepin/go-lib/gettext"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 func getSystemIdNameMap() map[string]string {

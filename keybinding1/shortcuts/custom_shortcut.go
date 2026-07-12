@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/linuxdeepin/dde-daemon/keybinding1/util"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/velora-daemon/keybinding1/util"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 )
 
 const (

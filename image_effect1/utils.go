@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 func getOutputFile(effect, filename string) (outputFile string) {

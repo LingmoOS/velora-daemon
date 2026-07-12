@@ -11,8 +11,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/linuxdeepin/go-lib/appinfo/desktopappinfo"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/appinfo/desktopappinfo"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 
 	"os"
 	"os/exec"
@@ -21,29 +21,29 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	wm "github.com/linuxdeepin/go-dbus-factory/session/com.deepin.wm"
-	inputdevices "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.inputdevices1"
-	kwayland "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.kwayland1"
-	lockfront "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.lockfront1"
-	network "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.network1"
-	sessionmanager "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.sessionmanager1"
-	shutdownfront "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.shutdownfront1"
-	newAppmanager "github.com/linuxdeepin/go-dbus-factory/session/org.desktopspec.applicationmanager1"
-	airplanemode "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.airplanemode1"
-	backlight "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.backlighthelper1"
-	keyevent "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.keyevent1"
-	power "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.power1"
-	systeminfo "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.systeminfo1"
-	DisplayManager "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.DisplayManager"
-	ofdbus "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.dbus"
-	login1 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.login1"
-	networkmanager "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.networkmanager"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/dbusutil/proxy"
-	"github.com/linuxdeepin/go-lib/xdg/basedir"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	"github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	wm "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/com.lingmo.wm"
+	inputdevices "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.inputdevices1"
+	kwayland "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.kwayland1"
+	lockfront "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.lockfront1"
+	network "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.network1"
+	sessionmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.sessionmanager1"
+	shutdownfront "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.shutdownfront1"
+	newAppmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.desktopspec.applicationmanager1"
+	airplanemode "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.airplanemode1"
+	backlight "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.backlighthelper1"
+	keyevent "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.keyevent1"
+	power "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.power1"
+	systeminfo "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.systeminfo1"
+	DisplayManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.DisplayManager"
+	ofdbus "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.dbus"
+	login1 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.login1"
+	networkmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.networkmanager"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil/proxy"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/xdg/basedir"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/util/keysyms"
 )
@@ -897,7 +897,7 @@ func (m *Manager) handleKeyEventByWayland(changKey string) {
 			}()
 		}
 	} else if action.Type == shortcuts.ActionTypeShowControlCenter {
-		err := m.execCmd("dbus-send --session --dest=org.deepin.dde.ControlCenter1  --print-reply /org/deepin/dde/ControlCenter1 org.deepin.dde.ControlCenter1.Show",
+		err := m.execCmd("dbus-send --session --dest=org.lingmo.ControlCenter1  --print-reply /org/lingmo/ControlCenter1 org.lingmo.ControlCenter1.Show",
 			false)
 		if err != nil {
 			logger.Warning("failed to show control center:", err)

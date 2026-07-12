@@ -8,8 +8,8 @@ import (
 	"time"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-api/soundutils"
-	. "github.com/linuxdeepin/go-lib/gettext"
+	"github.com/LingmoOS/velora-api/soundutils"
+	. "github.com/LingmoOS/golang-github-lingmo-go-lib/gettext"
 )
 
 // nolint
@@ -100,7 +100,7 @@ func (m *Manager) handleWakeup() {
 
 	// Fix wayland sometimes no dpms event after wakeup
 	if m.UseWayland {
-		err := m.service.Conn().Object("org.deepin.dde.KWayland1",
+		err := m.service.Conn().Object("org.lingmo.KWayland1",
 			"/org/deepin/dde/KWayland1/Output").Call("org.deepin.dde.KWayland1.Idle.simulateUserActivity", 0).Err
 
 		if err != nil {

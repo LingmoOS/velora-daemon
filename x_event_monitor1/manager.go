@@ -11,9 +11,9 @@ import (
 	"sync"
 
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/strv"
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 	x "github.com/linuxdeepin/go-x11-client"
 	"github.com/linuxdeepin/go-x11-client/ext/ge"
 	"github.com/linuxdeepin/go-x11-client/ext/input"

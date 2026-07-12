@@ -8,8 +8,8 @@ import (
 	"os"
 	"path/filepath"
 
-	backlight "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.backlighthelper1"
-	"github.com/linuxdeepin/go-lib/pulse"
+	backlight "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.backlighthelper1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/pulse"
 )
 
 const huaweiMicLedName = "huawei::mic"

@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	. "github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	. "github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
 )
 
 func (m *Manager) shouldShowCapsLockOSD() bool {
@@ -178,7 +178,7 @@ func (m *Manager) initHandlers() {
 	}
 
 	m.handlers[ActionTypeShowControlCenter] = func(ev *KeyEvent) {
-		err := m.execCmd("dbus-send --session --dest=org.deepin.dde.ControlCenter1  --print-reply /org/deepin/dde/ControlCenter1 org.deepin.dde.ControlCenter1.Show",
+		err := m.execCmd("dbus-send --session --dest=org.lingmo.ControlCenter1  --print-reply /org/lingmo/ControlCenter1 org.lingmo.ControlCenter1.Show",
 			false)
 		if err != nil {
 			logger.Warning("failed to show control center:", err)

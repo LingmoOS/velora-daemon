@@ -7,7 +7,7 @@ package power
 import (
 	"time"
 
-	"github.com/linuxdeepin/dde-api/powersupply/battery"
+	"github.com/LingmoOS/velora-api/powersupply/battery"
 )
 
 func (m *Manager) refreshBatteryDisplay() {

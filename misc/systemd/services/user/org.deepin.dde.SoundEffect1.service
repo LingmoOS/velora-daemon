@@ -9,7 +9,7 @@ After=dbus.service
 
 [Service]
 Type=dbus
-BusName=org.deepin.dde.SoundEffect1
+BusName=org.lingmo.SoundEffect1
 ExecStart=/usr/lib/deepin-daemon/soundeffect
 Slice=session.slice
 Restart=on-failure

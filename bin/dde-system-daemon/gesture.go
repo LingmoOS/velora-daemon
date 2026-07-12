@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/dde-daemon/system/gesture1"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/velora-daemon/system/gesture1"
 )
 
 func (*Daemon) SetLongPressDuration(duration uint32) *dbus.Error {

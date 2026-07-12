@@ -9,12 +9,12 @@ import (
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/keybinding1/constants"
-	. "github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	display "github.com/linuxdeepin/go-dbus-factory/session/org.deepin.dde.display1"
-	backlight "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.backlighthelper1"
-	"github.com/linuxdeepin/go-lib/strv"
+	"github.com/LingmoOS/velora-daemon/keybinding1/constants"
+	. "github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	display "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/session/org.lingmo.display1"
+	backlight "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.backlighthelper1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/strv"
 )
 
 type OsdBrightnessState int32

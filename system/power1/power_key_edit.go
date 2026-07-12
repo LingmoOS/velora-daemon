@@ -7,8 +7,8 @@ package power
 import (
 	"errors"
 
-	"github.com/linuxdeepin/dde-daemon/common/dconfig"
-	"github.com/linuxdeepin/go-lib/utils"
+	"github.com/LingmoOS/velora-daemon/common/dconfig"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 func interfaceToArrayString(v interface{}) (d []interface{}) {

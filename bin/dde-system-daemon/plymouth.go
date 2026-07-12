@@ -7,15 +7,15 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/linuxdeepin/dde-daemon/common/systemdunit"
+	"github.com/LingmoOS/velora-daemon/common/systemdunit"
 	"os"
 	"os/exec"
 	"strings"
 	"sync"
 
 	"github.com/godbus/dbus/v5"
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 var plymouthLocker sync.Mutex

@@ -16,10 +16,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/linuxdeepin/dde-api/dxinput"
-	"github.com/linuxdeepin/dde-api/dxinput/common"
-	dxutils "github.com/linuxdeepin/dde-api/dxinput/utils"
-	gudev "github.com/linuxdeepin/go-gir/gudev-1.0"
+	"github.com/LingmoOS/velora-api/dxinput"
+	"github.com/LingmoOS/velora-api/dxinput/common"
+	dxutils "github.com/LingmoOS/velora-api/dxinput/utils"
+	gudev "github.com/LingmoOS/go-gir-generator/gudev-1.0"
 )
 
 type mouseInfo struct {

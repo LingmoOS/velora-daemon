@@ -9,7 +9,7 @@ import (
 	"encoding/gob"
 	"os"
 
-	dutils "github.com/linuxdeepin/go-lib/utils"
+	dutils "github.com/LingmoOS/golang-github-lingmo-go-lib/utils"
 )
 
 func writeDatasToFile(datas interface{}, filename string) {

@@ -5,7 +5,7 @@
 package bluetooth
 
 import (
-	btcommon "github.com/linuxdeepin/dde-daemon/common/bluetooth"
+	btcommon "github.com/LingmoOS/velora-daemon/common/bluetooth"
 )
 
 const (

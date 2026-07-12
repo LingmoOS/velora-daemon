@@ -10,13 +10,13 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	networkmanager "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.networkmanager"
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	networkmanager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.networkmanager"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (
-	dbusServiceName = "org.deepin.dde.AirplaneMode1"
+	dbusServiceName = "org.lingmo.AirplaneMode1"
 	dbusPath        = "/org/deepin/dde/AirplaneMode1"
 	dbusInterface   = dbusServiceName
 

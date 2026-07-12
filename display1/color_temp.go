@@ -17,11 +17,11 @@ import (
 	"sync"
 	"time"
 
-	configManager "github.com/linuxdeepin/go-dbus-factory/org.desktopspec.ConfigManager"
+	configManager "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/org.desktopspec.ConfigManager"
 
 	"github.com/godbus/dbus/v5"
-	geoclue2 "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.geoclue2"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	geoclue2 "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.geoclue2"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (

@@ -7,10 +7,10 @@ package keybinding
 import (
 	"errors"
 
-	. "github.com/linuxdeepin/dde-daemon/keybinding1/shortcuts"
-	backlight "github.com/linuxdeepin/go-dbus-factory/system/org.deepin.dde.backlighthelper1"
-	commonbl "github.com/linuxdeepin/go-lib/backlight/common"
-	kbdbl "github.com/linuxdeepin/go-lib/backlight/keyboard"
+	. "github.com/LingmoOS/velora-daemon/keybinding1/shortcuts"
+	backlight "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.lingmo.backlighthelper1"
+	commonbl "github.com/LingmoOS/golang-github-lingmo-go-lib/backlight/common"
+	kbdbl "github.com/LingmoOS/golang-github-lingmo-go-lib/backlight/keyboard"
 )
 
 const backlightTypeKeyboard = 2

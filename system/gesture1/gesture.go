@@ -13,15 +13,15 @@ import "C"
 
 import (
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/dde-daemon/loader"
-	"github.com/linuxdeepin/go-lib/dbusutil"
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/velora-daemon/loader"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 //go:generate dbusutil-gen em -type Manager
 
 const (
-	dbusServiceName = "org.deepin.dde.Gesture1"
+	dbusServiceName = "org.lingmo.Gesture1"
 	dbusPath        = "/org/deepin/dde/Gesture1"
 	dbusInterface   = dbusServiceName
 )

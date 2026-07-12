@@ -1,13 +1,13 @@
-Source: velora-daemon
+Source: lingmo-daemon
 Section: admin
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
-         dde-api-dev (>> 3.17.1+),
+         lingmo-api-dev (>> 3.17.1+),
          debhelper-compat (= 11),
-         velora-desktop-schemas,
-         deepin-gettext-tools,
-         golang-github-linuxdeepin-go-lib-dev(>> 5.1.0+),
+         lingmo-desktop-schemas,
+         lingmo-gettext-tools,
+         golang-github-lingmo-go-lib-dev(>> 5.1.0+),
          golang-gir-gio-2.0-dev (>> 1.2.0+),
          golang-gir-glib-2.0-dev (>> 1.2.0+),
          golang-gir-gobject-2.0-dev (>> 1.2.0+),
@@ -18,8 +18,8 @@ Build-Depends:
          golang-github-gosexy-gettext-dev,
          golang-github-jinzhu-gorm-dev,
          golang-github-kelvins-sunrisesunset-dev,
-         golang-github-linuxdeepin-go-dbus-factory-dev (>= 1.4.0),
-         golang-github-linuxdeepin-go-x11-client-dev (>= 0.0.4),
+         golang-github-lingmo-go-dbus-factory-dev (>= 1.4.0),
+         golang-github-lingmo-go-x11-client-dev (>= 0.0.4),
          golang-github-lofanmi-pinyin-dev,
          golang-github-mattn-go-sqlite3-dev,
          golang-github-mozillazg-go-pinyin-dev,
@@ -54,19 +54,19 @@ Build-Depends:
          libddcutil-dev,
          python3,
 Standards-Version: 4.5.0
-Homepage: https://github.com/LingmoOS/velora-daemon
+Homepage: https://github.com/LingmoOS/lingmo-daemon
 
-Package: dde-daemon
+Package: lingmo-daemon
 Architecture: any
 Depends:
          bluez-obexd,
          cgroup-tools,
          dbus,
-         dde-api (>> 3.17.1+),
-         dde-polkit-agent,
-         velora-desktop-schemas (>> 5.1.2+),
-         deepin-installer-timezones,
-         deepin-sound-theme,
+         lingmo-api (>> 3.17.1+),
+         lingmo-polkit-agent,
+         lingmo-desktop-schemas (>> 5.1.2+),
+         lingmo-installer-timezones,
+         lingmo-sound-theme,
          dmidecode,
          libglib2.0-bin,
          hwinfo,
@@ -83,7 +83,7 @@ Depends:
          xdotool,
          x11-utils,
          xkb-data,
-         dde-dconfig-daemon,
+         lingmo-dconfig-daemon,
          ${dist:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
