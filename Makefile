@@ -1,6 +1,6 @@
 PREFIX = /usr
 GOPATH_DIR = gopath
-GOPKG_PREFIX = github.com/linuxdeepin/dde-daemon
+GOPKG_PREFIX = github.com/LingmoOS/velora-daemon
 GOBUILD = go build $(GO_BUILD_FLAGS)
 export GOPATH=$(shell go env GOPATH)
 
