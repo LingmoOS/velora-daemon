@@ -1,3 +1,10 @@
+lingmo-daemon (6.1.92.lingmo.2) unstable; urgency=medium
+
+  * Make the optional Lingmo sound theme a recommendation so dependent
+    packages can build before the theme artifact is available.
+
+ -- Lingmo OS Team <team@lingmo.org>  Tue, 14 Jul 2026 19:02:06 +0800
+
 lingmo-daemon (6.1.92.lingmo.1) unstable; urgency=medium
 
   * Lingmo namespace migration.
