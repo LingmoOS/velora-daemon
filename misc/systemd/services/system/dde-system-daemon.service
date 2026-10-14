@@ -64,6 +64,9 @@ ReadWritePaths=-/var/lib/dde-daemon/airplane_mode
 # com.deepin.daemon.ImageEffect
 ReadWritePaths=-/var/cache/image-blur
 # com.deepin.daemon.Uadp
+# 头像同步写 SDDM 的 faces 目录（ProtectSystem=strict 下必须显式放行；
+# 放行父目录是因为 faces 子目录可能还不存在，需要能创建它）
+ReadWritePaths=-/usr/share/sddm
 ReadWritePaths=-/var/lib/dde-daemon/uadp/
 # com.deepin.system.Network
 ReadWritePaths=-/var/lib/dde-daemon/network/

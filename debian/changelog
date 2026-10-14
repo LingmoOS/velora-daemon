@@ -1,3 +1,17 @@
+velora-daemon (6.1.92.lingmo5u1) unstable; urgency=medium
+
+  * fix: 用户头像变更时同步一份到 SDDM 的 faces 目录
+    - DDE 的头像保存在 /var/lib/AccountsService/icons/，而 SDDM 登录主题读取的是
+      greeter 的 userModel IconRole（文件来自 /usr/share/sddm/faces/<用户>.face.icon），
+      两边没有任何同步，导致在控制中心更换头像后登录页仍显示旧头像/默认头像
+    - 在 accounts1/user.go 的 setIconFile() 里同步（标准头像与自定义头像都必经此处），
+      拷贝后显式 chmod 0644，保证以 sddm 用户运行的 greeter 可读；失败只记日志，
+      不影响头像本身的保存
+    - dde-system-daemon.service 是 ProtectSystem=strict，为该目录补
+      ReadWritePaths=-/usr/share/sddm/faces，否则写入会失败
+
+ -- Lingmo OS Team <team@lingmo.org>  Wed, 14 Oct 2026 19:36:11 +0800
+
 velora-daemon (6.1.91.lingmo.1) unstable; urgency=medium
 
   * new release for Lingmo OS.

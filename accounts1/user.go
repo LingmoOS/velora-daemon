@@ -310,9 +310,41 @@ func (u *User) getGroups() []string {
 // ret0: new user icon uri
 // ret1: added
 // ret2: error
+// SDDM 登录主题读取的是 /usr/share/sddm/faces/<用户名>.face.icon
+// （通过 greeter 的 userModel IconRole），而 DDE 的头像保存在
+// /var/lib/AccountsService/icons/ 下。两边原本没有任何同步，导致在控制中心换过头像后，
+// 登录页仍然显示旧头像或默认头像。这里在头像变更时同步一份过去。
+//
+// 失败只记日志：头像本身已经保存成功，不应该因此让 SetIconFile 失败。
+func syncSddmFaceFile(username, iconFile string) {
+	const sddmFacesDir = "/usr/share/sddm/faces"
+	if username == "" || iconFile == "" {
+		return
+	}
+	if _, err := os.Stat(iconFile); err != nil {
+		logger.Warningf("[syncSddmFaceFile] icon file %q not readable: %v", iconFile, err)
+		return
+	}
+	if err := os.MkdirAll(sddmFacesDir, 0755); err != nil {
+		logger.Warningf("[syncSddmFaceFile] create %q failed: %v", sddmFacesDir, err)
+		return
+	}
+	dest := path.Join(sddmFacesDir, username+".face.icon")
+	if err := dutils.CopyFile(iconFile, dest); err != nil {
+		logger.Warningf("[syncSddmFaceFile] copy %q -> %q failed: %v", iconFile, dest, err)
+		return
+	}
+	// greeter 以 sddm 用户运行，必须保证可读
+	if err := os.Chmod(dest, 0644); err != nil {
+		logger.Warningf("[syncSddmFaceFile] chmod %q failed: %v", dest, err)
+	}
+	logger.Debugf("[syncSddmFaceFile] synced %q -> %q", iconFile, dest)
+}
+
 func (u *User) setIconFile(iconURI string, isNewIcon bool) (string, bool, error) {
 	// 通过控制中心修改过的自定义用户头像, 需要重新添加进来, 并将之前的头像删除掉, 否则直接返回系统头像
 	if isStrInArray(iconURI, u.IconList) && !isNewIcon {
+		syncSddmFaceFile(u.UserName, dutils.DecodeURI(iconURI))
 		return iconURI, false, nil
 	}
 
@@ -339,6 +371,8 @@ func (u *User) setIconFile(iconURI string, isNewIcon bool) (string, bool, error)
 	if err != nil {
 		return "", false, err
 	}
+
+	syncSddmFaceFile(u.UserName, dest)
 
 	return dutils.EncodeURI(dest, dutils.SCHEME_FILE), true, nil
 }
